@@ -1,5 +1,3 @@
-**Repository Name:** Portfolio-CSS
-
 **Description:**
 
 This GitHub repository contains the source code for my simple portfolio website. The website is designed to showcase my skills, projects, and contact information in an elegant and interactive manner.
@@ -11,7 +9,7 @@ This GitHub repository contains the source code for my simple portfolio website.
 
 **1. Introduction:**
 
-This repository hosts the source code for my portfolio website template built using HTML, CSS, and JavaScript. It features smooth scrolling behavior, responsive design, and interactive elements.
+This repository hosts the source code for my portfolio website built using HTML, CSS, and JavaScript. It features smooth scrolling behavior, responsive design, and interactive elements.
 
 **2. Features:**
 - Responsive design that adapts to various screen sizes and devices.
