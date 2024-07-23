@@ -53,8 +53,8 @@
                 <p>I'm a <span class="typedText"></span></p>
             </div>
             <div class="featured-text-info">
-                <p>Intermediate ML Developer with an all-consuming (and frankly unhealthy) hunger
-                   of all things CV
+                <p>AI/ML researcher with an unquenchable thirst for discovery and innovation. 
+                   Passionate about turning complex ideas into groundbreaking solutions.
                 </p>
             </div>
             <div class="featured-text-btn">
@@ -132,6 +132,7 @@
                         <span>Python</span>
                         <span>C/C++</span>
                         <span>Java</span>
+                        <span>Rust</span>
                     </div>
                 </div>
             </div>
@@ -142,21 +143,21 @@
           <div class="top-header">
               <h1>Projects</h1>
           </div>
-          <div class="project-container">
+          <div class="project-container" onclick="redirectToPage('nomework')">
             <div class="project-box">
                 <i class="uil uil-book-open"></i>
                 <h3>Nomework</h3>
                 <label>Handwritten Assignment Generator</label>
             </div>
-            <div class="project-box">
+            <div class="project-box" onclick="redirectToPage('rakshakrita')">
                 <i class="uil uil-feedback"></i>
                 <h3>RakshakRita</h3>
                 <label>Police Feedback System</label>
             </div>
-            <div class="project-box">
+            <div class="project-box" onclick="redirectToPage('optima')">
                 <i class="uil uil-brain"></i>
-                <h3>EduPro.inc</h3>
-                <label>EduTech website for the underserved</label>
+                <h3>Optima</h3>
+                <label>Asthma Usage Analyzer</label>
             </div>
           </div>
        </section>
@@ -176,7 +177,7 @@
              </div>
              <div class="col">
                 <div class="form-control">
-                    <!-- <form action="./send_feedback.php" method="POST"></form> -->
+                    <form id="feedback-form">
                         <div class="form-inputs">
                             <input type="text" class="input-field" name="name" id="name" placeholder="Name">
                             <input type="email" class="input-field" name="email" id="email" placeholder="Email">
@@ -187,7 +188,7 @@
                         <div class="form-button">
                             <button class="btn" id="send-btn" type="submit">Send <i class="uil uil-message"></i></button>
                         </div>
-                    <!-- </form> -->
+                    </form>
                 </div>
              </div>
           </div>

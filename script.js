@@ -30,7 +30,7 @@ function headerShadow() {
 
 
  var typingEffect = new Typed(".typedText",{
-    strings : ["ML Developer","Frontend Developer","Blogger"],
+    strings : ["ML Developer","Researcher","Blogger"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
@@ -99,3 +99,52 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive)
+
+function redirectToPage(divName) {
+  let url;
+  if (divName === "nomework") {
+    url = "https://github.com/Tirath5504/Nomework_latest";
+  } else if (divName === "rakshakrita") {
+    url = "https://github.com/Tirath5504/RJPOLICE_HACK_177_DjDawgs_1";
+  } else if (divName === "optima") {
+    url = "https://github.com/Tirath5504/Codeshastra_Bogan_Breakers";
+  }
+  window.open(url, "_blank");
+}
+
+document.getElementById('feedback-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            var formData = new FormData(this);
+            var data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            fetch(
+              "https://hook.eu2.make.com/3ardugz0lrynnm9tix5bereepmsrher9",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+              }
+            )
+              .then((response) => {
+                if (response.ok) {
+                  alert("Your feedback has been sent successfully!");
+                } else {
+                  alert(
+                    "There was an error sending your feedback. Please try again."
+                  );
+                }
+              })
+              .catch((error) => {
+                alert(
+                  "There was an error sending your feedback. Please try again."
+                );
+                console.error("Error:", error);
+              });
+
+        });
