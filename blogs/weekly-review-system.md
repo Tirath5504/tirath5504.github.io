@@ -19,7 +19,7 @@ I dedicate 30-45 minutes every Sunday evening to review and plan. Here's my exac
 
 #### 1. Brain Dump (5 minutes)
 
-I write down everything on my mind—tasks, ideas, concerns. This clears mental clutter.
+I write down everything on my mind: tasks, ideas, concerns. This clears mental clutter.
 
 #### 2. Review Last Week (10 minutes)
 
@@ -96,7 +96,7 @@ Since implementing this system:
 
 ## Your Turn
 
-If you're feeling overwhelmed or directionless, try implementing a weekly review. Start small—even 15 minutes can make a difference.
+If you're feeling overwhelmed or directionless, try implementing a weekly review. Start small: even 15 minutes can make a difference.
 
 What's your productivity system? I'd love to hear what works for you!
 

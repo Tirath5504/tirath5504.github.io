@@ -141,6 +141,9 @@ async function loadFullBlog(blogId) {
       </footer>
     `;
 
+    // Initialize lazy loading for images in the blog content
+    initializeLazyLoading();
+
     // Show article view, hide grid
     document.getElementById("blog-grid").parentElement.style.display = "none";
     document.getElementById("blog-article-view").style.display = "block";
@@ -156,81 +159,138 @@ async function loadFullBlog(blogId) {
   }
 }
 
+// Initialize lazy loading with error handling for images
+function initializeLazyLoading() {
+  const images = document.querySelectorAll(".blog-content img");
+
+  images.forEach((img) => {
+    // Store the original src
+    const originalSrc = img.src;
+    const altText = img.alt || "Image";
+
+    // Check if image is already loaded (from cache)
+    if (img.complete && img.naturalHeight !== 0) {
+      // Image already loaded successfully, don't wrap it
+      console.log("Image already loaded:", originalSrc);
+      return;
+    }
+
+    // Create a wrapper for the image
+    const wrapper = document.createElement("div");
+    wrapper.className = "blog-image-wrapper";
+    img.parentNode.insertBefore(wrapper, img);
+    wrapper.appendChild(img);
+
+    // Add loading class
+    wrapper.classList.add("loading");
+
+    // Create loading spinner
+    const loader = document.createElement("div");
+    loader.className = "blog-image-loader";
+    loader.innerHTML = '<div class="spinner"></div>';
+    wrapper.appendChild(loader);
+
+    // Handle image load success
+    img.addEventListener("load", () => {
+      console.log("Image loaded successfully:", originalSrc);
+      wrapper.classList.remove("loading");
+      wrapper.classList.add("loaded");
+      loader.remove();
+    });
+
+    // Handle image load error
+    img.addEventListener("error", () => {
+      console.warn(`Failed to load image: ${originalSrc}`);
+      wrapper.classList.remove("loading");
+      wrapper.classList.add("error");
+      loader.remove();
+
+      // Create placeholder
+      const placeholder = document.createElement("div");
+      placeholder.className = "blog-image-placeholder";
+      placeholder.innerHTML = `
+        <div class="placeholder-content">
+          <i class="uil uil-image-broken"></i>
+          <p>${altText}</p>
+          <span class="placeholder-hint">Image unavailable</span>
+        </div>
+      `;
+
+      // Replace image with placeholder
+      img.replaceWith(placeholder);
+    });
+
+    // Trigger loading by setting src (in case it's already loaded from cache)
+    if (img.complete) {
+      if (img.naturalWidth === 0) {
+        // Image failed to load
+        img.dispatchEvent(new Event("error"));
+      } else {
+        // Image loaded successfully
+        img.dispatchEvent(new Event("load"));
+      }
+    }
+  });
+}
+
 // Setup blog category filtering
 function setupBlogFilters() {
   const filterButtons = document.querySelectorAll(".filter-button");
-
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      // Update active state
+      const category = button.getAttribute("data-category");
+
+      // Update active button
       filterButtons.forEach((btn) => btn.classList.remove("active"));
       button.classList.add("active");
 
       // Filter blogs
-      const category = button.dataset.category;
-      const filtered =
+      const filteredBlogs =
         category === "all"
           ? allBlogs
           : allBlogs.filter((blog) => blog.category === category);
 
-      renderBlogCards(filtered);
+      renderBlogCards(filteredBlogs);
     });
   });
 }
 
 // Setup blog search
 function setupBlogSearch() {
-  const searchInput = document.getElementById("blog-search");
+  const searchInput = document.getElementById("blog-search-input");
+  if (!searchInput) return;
 
   searchInput.addEventListener("input", (e) => {
-    const query = e.target.value.toLowerCase();
+    const query = e.target.value.toLowerCase().trim();
 
-    if (!query) {
-      // Reset to current filter
-      const activeFilter = document.querySelector(".filter-button.active");
-      const category = activeFilter.dataset.category;
-      const filtered =
-        category === "all"
-          ? allBlogs
-          : allBlogs.filter((blog) => blog.category === category);
-      renderBlogCards(filtered);
-      return;
-    }
-
-    const filtered = allBlogs.filter((blog) => {
-      return (
-        blog.title.toLowerCase().includes(query) ||
-        blog.excerpt.toLowerCase().includes(query) ||
-        blog.tags.some((tag) => tag.toLowerCase().includes(query))
-      );
+    const filteredBlogs = allBlogs.filter((blog) => {
+      const searchText = `${blog.title} ${blog.excerpt} ${blog.tags.join(
+        " "
+      )}`.toLowerCase();
+      return searchText.includes(query);
     });
 
-    renderBlogCards(filtered);
+    renderBlogCards(filteredBlogs);
   });
 }
 
 // Setup article view navigation (back button)
 function setupArticleView() {
-  const backButton = document.getElementById("back-to-grid");
+  const backButton = document.getElementById("back-to-blogs");
+  if (!backButton) return;
 
   backButton.addEventListener("click", () => {
-    // Hide article view, show grid
     document.getElementById("blog-article-view").style.display = "none";
     document.getElementById("blog-grid").parentElement.style.display = "block";
-
-    // Clear URL hash
     window.location.hash = "";
-
-    // Scroll to blog grid
-    document.getElementById("blog-grid").scrollIntoView({ behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
 
 // Utility: Format date to readable format
 function formatDate(dateString) {
-  const date = new Date(dateString);
-  const options = { year: "numeric", month: "long", day: "numeric" };
-  return date.toLocaleDateString("en-US", options);
+  const options = { year: "numeric", month: "short", day: "numeric" };
+  return new Date(dateString).toLocaleDateString("en-US", options);
 }
 
 // Utility: Capitalize first letter
