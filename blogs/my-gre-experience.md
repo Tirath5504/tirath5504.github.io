@@ -2,15 +2,11 @@
 
 Graduate Record Examinations - very intimidating name. You peek into its syllabus. Huh. Math and English. That doesn't seem so hard. You solve a few Quant (just call it math ETS, it ain't that deep) problems and you gain confidence (especially if you are an engineering student like me). You look up some Verbal problems - WTF. How and why am I supposed to know the meanings of words like _quixotic, lassitude and inveigle_?? This is just the start of a journey where your confidence will keep oscillating between "I HAVE BECOME DEATH, THE DESTROYER OF EXAMS" to "pls someone explain what is the answer of this RC question - i am confused between options C and D - wait, _answer is A???_". I am sharing my journey below hoping that it will help at least some of y'all to avoid the mistakes I made. 
 
-![My confidence when preparing for the GRE](img/blogs/gre/mood_swing.png)
-
 ## How the beginning was the root cause of my downfall (A New Hope)
 
 As an engineering student, I am supremely confident in my Math skills - _"if I can solve fourier problems, what's algebra and arithmetic"_. I planned to complete Quant in a couple of weeks and then move onto Verbal (_shiver_). BIG MISTAKE. Never do Quant and Verbal separately. The exam is designed to evaluate how well you juggle quantitative and verbal reasoning together. There are four scored sections (five if you count AWA - _but who cares about that am I right?_) with Quant and Verbal spread across the test. On some days, I would be extremely motivated (50 correct answers in a row - _I am a genius_) and solve a large amount of questions while most other days I would be less enthusiastic (_do I really need to practice solving quadratic equations?_). Consistency was my biggest enemy and by the end of the third week, I had only adequately prepared for the first two quant sections with Geometry and Data Analysis still remaining. I had originally planned to give the GRE in six weeks with two weeks given to Quant and four for Verbal but now I was halfway through my prep time having done only the Arithmetic and Algebra, arguably the easiest parts of the entire exam. I was doomed. 
 
 I had originally planned to give the GRE in the first week of August, with most of my prep time slotted in July, but by 20th July, I was still only halfway through Quant. I panicked. This was not necessarily the worst outcome since I also buckled up to grind it out but if I had been slightly more calm, I would have recognized that adhering to the original schedule was an impossibility. Nevertheless, I finished the rest of Quant in one week, completing tons of questions and concepts everyday. In hindsight, I probably rushed through it - focusing more on quantity and not quality - but hindsight is 20-20. Now that I had finished Quant, I was again in a dilemma. I had originally planned to finish a majority of preparation before my college began in August but now I am left with finishing the entirety of Verbal along with college. I am, once again, doomed. 
-
-![MCQ RNG](img/blogs/gre/gre_mcq.png) 
 
 ## The Comeback (Revenge of the Jedi)
 
@@ -21,8 +17,6 @@ I had no apparent conceptual problem in Quant; it was my mindset that was the is
 Finally, coming to Verbal. From my diagnostic test, I knew I had to primarily improve in two major aspects - vocabulary and RC strategies. I had already nailed down the art of solving TC and SE questions - look at the question AFTER making pairs from the options for SE and figuring out the tense, PoS (Part of Speech) and connotation (positive/negative) associated with each blank for TC. The only SE and TC questions I erred in were the ones in which the meaning of a word in the question or the option itself were unknown. 
 
 The RC questions were a major source of frustration for me since i) they contained highly academic texts, sometimes from niche domains like Art where I had little to no prior expertise or exposure of, ii) identifying what the question asked for (classifying the _type_ of question) and iii) the options of each medium-hard RC question were extremely similar to one another with almost every question containing an ingrain of "correctness". I gave in. I watched several RC strategy videos and learnt how to attack each and every type of question. This is where I devoted the majority of my prep time (but also proved the most fruitful in the end). 
-
-![New Problems vs Old Problems](../img/blogs/gre/old_new_problems.png) 
 
 ## Test Day Drama (Revenge of the Sith)
 
