@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "id": "weekly-review-system",
+      "title": "My Weekly Review System: Staying Organized and Productive",
+      "date": "2025-19-10",
+      "category": "general",
+      "excerpt": "A detailed look at my weekly review process that helps me stay organized, focused, and balanced. Includes practical steps and tools I use every Sunday.",
+      "author": "Tirath Bhathawala",
+      "readTime": "6 min read",
+      "tags": ["Productivity", "Organization", "Personal Development"],
+      "featured": false,
+      "file": "blogs/weekly-review-system.md"
+    }
+  ]
+}

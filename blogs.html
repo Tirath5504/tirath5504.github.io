@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TB21XZ78MT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-TB21XZ78MT");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Markdown parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>Blogs | Tirath Bhathawala</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a class="nav-logo" href="index.html">Tirath.</a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section blog-hero fade-in" id="top-of-blog">
+        <div class="container blog-hero-content">
+          <div class="blog-hero-text">
+            <span class="blog-hero-kicker">Insights &amp; Stories</span>
+            <h1>Ideas at the Intersection of AI, Research, and Life</h1>
+            <p>
+              A curated collection of deep dives, personal reflections, and
+              practical guides covering AI research, product thinking, and the
+              occasional offbeat story. Explore what I am experimenting with and
+              learning along the way.
+            </p>
+            <div class="blog-hero-actions">
+              <a href="#blog-grid" class="btn btn-primary">
+                Dive Into the Posts
+              </a>
+              <a href="contact.html" class="btn btn-secondary"
+                >Pitch a Collaboration</a
+              >
+            </div>
+          </div>
+          <div class="blog-hero-card" id="featured-highlight">
+            <!-- Featured blog loaded dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section blog-controls fade-in" aria-label="Blog filters">
+        <div class="container">
+          <div class="blog-search">
+            <label for="blog-search" class="visually-hidden"
+              >Search posts</label
+            >
+            <i class="uil uil-search"></i>
+            <input
+              type="search"
+              id="blog-search"
+              placeholder="Search by title, summary, or tag"
+              autocomplete="off"
+            />
+          </div>
+          <div class="blog-filter-bar">
+            <span class="filter-label">Browse by category:</span>
+            <div class="filter-buttons" role="list" aria-label="Categories">
+              <button
+                class="filter-button active"
+                data-category="all"
+                role="listitem"
+              >
+                All
+              </button>
+              <button
+                class="filter-button"
+                data-category="technical"
+                role="listitem"
+              >
+                Technical
+              </button>
+              <button
+                class="filter-button"
+                data-category="general"
+                role="listitem"
+              >
+                General
+              </button>
+              <button
+                class="filter-button"
+                data-category="community"
+                role="listitem"
+              >
+                Community
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section blog-list fade-in" aria-label="Blog posts">
+        <div class="container blog-grid" id="blog-grid">
+          <!-- Blog cards dynamically loaded from Markdown files -->
+        </div>
+      </section>
+
+      <section
+        class="section blog-details fade-in"
+        aria-label="Full blog article"
+        id="blog-article-view"
+        style="display: none"
+      >
+        <div class="container">
+          <button
+            class="btn btn-secondary"
+            id="back-to-grid"
+            style="margin-bottom: 2rem"
+          >
+            <i class="uil uil-arrow-left"></i> Back to All Posts
+          </button>
+          <article class="blog-detail" id="blog-article-content">
+            <!-- Full blog content loaded dynamically from Markdown -->
+          </article>
+        </div>
+      </section>
+
+      <section class="section blog-newsletter fade-in" aria-label="Newsletter">
+        <div class="container newsletter-card">
+          <div class="newsletter-content">
+            <h2>Subscribe for Fresh Takes</h2>
+            <p>
+              Get a monthly digest of research notes, upcoming talks, and
+              behind-the-scenes experiments. No spam—just thoughtful updates.
+            </p>
+          </div>
+          <form class="newsletter-form" id="newsletter-form">
+            <label for="newsletter-email" class="visually-hidden">
+              Email address
+            </label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p class="footer-text">
+          © 2025 Tirath Bhathawala. Crafted with passion for AI research and
+          innovation.
+        </p>
+        <div class="footer-social">
+          <a
+            href="https://www.linkedin.com/in/tirath-bhathawala-a58769159/"
+            class="social-link"
+            aria-label="LinkedIn"
+          >
+            <i class="uil uil-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/Tirath5504"
+            class="social-link"
+            aria-label="GitHub"
+          >
+            <i class="uil uil-github"></i>
+          </a>
+          <a
+            href="https://scholar.google.com/citations?user=xjNDI7AAAAAJ"
+            class="social-link"
+            aria-label="Google Scholar"
+          >
+            <i class="ai ai-google-scholar-square"></i>
+          </a>
+          <a
+            href="https://mlbeginnershandbook.blogspot.com/"
+            class="social-link"
+            aria-label="Blog"
+          >
+            <i class="uil uil-blogger"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/04_tirath/"
+            class="social-link"
+            aria-label="Instagram"
+          >
+            <i class="uil uil-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/blog-loader.js"></script>
+  </body>
+</html>

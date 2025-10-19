@@ -19,1429 +19,130 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <title>Tirath Bhathawala | AI Researcher & Developer</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
-
-      :root {
-        --primary-bg: #0a0a0a;
-        --secondary-bg: #1a1a1a;
-        --accent-bg: #2a2a2a;
-        --primary-text: #ffffff;
-        --secondary-text: #b0b0b0;
-        --accent-text: #70c0e8;
-        --highlight: #00d4ff;
-        --highlight-hover: #0099cc;
-        --success: #00ff88;
-        --warning: #ffaa00;
-        --glass-bg: rgba(42, 42, 42, 0.8);
-        --glass-border: rgba(255, 255, 255, 0.1);
-        --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        --gradient-secondary: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        font-family: "Inter", sans-serif;
-        background: var(--primary-bg);
-        color: var(--primary-text);
-        line-height: 1.6;
-        overflow-x: hidden;
-      }
-
-      /* Enhanced scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: var(--secondary-bg);
-      }
-      ::-webkit-scrollbar-thumb {
-        background: var(--highlight);
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: var(--highlight-hover);
-      }
-
-      /* Navigation */
-      nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: rgba(10, 10, 10, 0.95);
-        backdrop-filter: blur(20px);
-        border-bottom: 1px solid var(--glass-border);
-        padding: 1rem 2rem;
-        z-index: 1000;
-        transition: all 0.3s ease;
-      }
-
-      .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      .nav-logo {
-        font-size: 1.8rem;
-        font-weight: 800;
-        background: var(--gradient-secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      .nav-menu {
-        display: flex;
-        list-style: none;
-        gap: 2rem;
-      }
-
-      .nav-link {
-        text-decoration: none;
-        color: var(--secondary-text);
-        font-weight: 500;
-        transition: all 0.3s ease;
-        position: relative;
-      }
-
-      .nav-link:hover,
-      .nav-link.active {
-        color: var(--highlight);
-      }
-
-      .nav-link::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: var(--highlight);
-        transition: width 0.3s ease;
-      }
-
-      .nav-link:hover::after,
-      .nav-link.active::after {
-        width: 100%;
-      }
-
-      /* Hero Section */
-      .hero {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 2rem;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .hero::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: radial-gradient(
-            circle at 20% 50%,
-            rgba(0, 212, 255, 0.1) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            circle at 80% 20%,
-            rgba(102, 126, 234, 0.1) 0%,
-            transparent 50%
-          );
-        z-index: -1;
-      }
-
-      .hero-content {
-        max-width: 1200px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
-      }
-
-      .hero-text h1 {
-        font-size: clamp(2.5rem, 5vw, 4rem);
-        font-weight: 800;
-        margin-bottom: 1rem;
-        background: linear-gradient(
-          135deg,
-          var(--primary-text) 0%,
-          var(--highlight) 100%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      .hero-text .subtitle {
-        font-size: 1.5rem;
-        color: var(--secondary-text);
-        margin-bottom: 2rem;
-      }
-
-      .typing-text {
-        color: var(--highlight);
-        font-weight: 600;
-      }
-
-      .hero-description {
-        font-size: 1.1rem;
-        color: var(--secondary-text);
-        margin-bottom: 3rem;
-        line-height: 1.8;
-      }
-
-      .hero-buttons {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-
-      .btn {
-        padding: 1rem 2rem;
-        border: none;
-        border-radius: 50px;
-        font-weight: 600;
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        font-size: 1rem;
-      }
-
-      .btn-primary {
-        background: var(--gradient-secondary);
-        color: white;
-      }
-
-      .btn-secondary {
-        background: transparent;
-        color: var(--highlight);
-        border: 2px solid var(--highlight);
-      }
-
-      .btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
-      }
-
-      .hero-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .hero-avatar {
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-        background: var(--gradient-primary);
-        padding: 5px;
-        animation: float 6s ease-in-out infinite;
-      }
-
-      .hero-avatar img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-
-      @keyframes float {
-        0%,
-        100% {
-          transform: translateY(0px);
-        }
-        50% {
-          transform: translateY(-20px);
-        }
-      }
-
-      .social-links {
-        display: flex;
-        gap: 1rem;
-        margin-top: 2rem;
-      }
-
-      .social-link {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: var(--glass-bg);
-        border: 1px solid var(--glass-border);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--secondary-text);
-        text-decoration: none;
-        transition: all 0.3s ease;
-      }
-
-      .social-link:hover {
-        background: var(--highlight);
-        color: white;
-        transform: translateY(-3px);
-      }
-
-      /* Stats Section */
-      .stats {
-        padding: 4rem 2rem;
-        background: var(--secondary-bg);
-      }
-
-      .stats-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 2rem;
-      }
-
-      .stat-item {
-        text-align: center;
-        padding: 2rem;
-        background: var(--glass-bg);
-        border: 1px solid var(--glass-border);
-        border-radius: 20px;
-        transition: all 0.3s ease;
-      }
-
-      .stat-item:hover {
-        transform: translateY(-5px);
-        border-color: var(--highlight);
-      }
-
-      .stat-number {
-        font-size: 2.5rem;
-        font-weight: 800;
-        color: var(--highlight);
-        display: block;
-      }
-
-      .stat-label {
-        color: var(--secondary-text);
-        margin-top: 0.5rem;
-      }
-
-      /* Section Styling */
-      .section {
-        padding: 6rem 2rem;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      .section-title {
-        text-align: center;
-        font-size: 3rem;
-        font-weight: 800;
-        margin-bottom: 3rem;
-        background: var(--gradient-primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      /* Experience Section */
-      .timeline {
-        position: relative;
-        max-width: 1000px;
-        margin: 0 auto;
-      }
-
-      .timeline::after {
-        content: "";
-        position: absolute;
-        width: 3px;
-        background: var(--highlight);
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -1.5px;
-      }
-
-      .timeline-item {
-        padding: 2rem 2rem;
-        position: relative;
-        background-color: inherit;
-        width: 50%;
-      }
-
-      .timeline-item::after {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        right: -10px;
-        background: var(--highlight);
-        border-radius: 50%;
-        top: 2.5rem;
-        z-index: 1;
-      }
-
-      .timeline-item:nth-child(even) {
-        left: 50%;
-      }
-
-      .timeline-item:nth-child(even)::after {
-        left: -10px;
-      }
-
-      .timeline-content {
-        padding: 2rem;
-        background: var(--glass-bg);
-        border: 1px solid var(--glass-border);
-        border-radius: 20px;
-        position: relative;
-        transition: all 0.3s ease;
-      }
-
-      .timeline-content:hover {
-        border-color: var(--highlight);
-        transform: translateY(-5px);
-      }
-
-      .timeline-date {
-        color: var(--highlight);
-        font-weight: 600;
-        font-size: 0.9rem;
-      }
-
-      .timeline-title {
-        font-size: 1.3rem;
-        font-weight: 700;
-        margin: 0.5rem 0;
-      }
-
-      .timeline-company {
-        color: var(--accent-text);
-        font-weight: 600;
-        margin-bottom: 1rem;
-      }
-
-      .timeline-description {
-        color: var(--secondary-text);
-        line-height: 1.6;
-      }
-
-      /* Projects Grid */
-      .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 2rem;
-        margin-top: 3rem;
-      }
-
-      .project-card {
-        background: var(--glass-bg);
-        border: 1px solid var(--glass-border);
-        border-radius: 20px;
-        padding: 2rem;
-        transition: all 0.3s ease;
-        /* cursor: pointer; */
-      }
-
-      .project-card:hover {
-        transform: translateY(-5px);
-        border-color: var(--highlight);
-        box-shadow: 0 20px 40px rgba(0, 212, 255, 0.1);
-      }
-
-      .project-icon {
-        font-size: 3rem;
-        color: var(--highlight);
-        margin-bottom: 1rem;
-      }
-
-      .project-title {
-        font-size: 1.4rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-      }
-
-      .project-description {
-        color: var(--secondary-text);
-        margin-bottom: 1.5rem;
-        line-height: 1.6;
-      }
-
-      .project-tech {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-bottom: 1.5rem;
-      }
-
-      .tech-tag {
-        background: var(--accent-bg);
-        color: var(--highlight);
-        padding: 0.3rem 0.8rem;
-        border-radius: 15px;
-        font-size: 0.8rem;
-        font-weight: 500;
-      }
-
-      .project-links {
-        display: flex;
-        gap: 1rem;
-      }
-
-      .project-link {
-        color: var(--highlight);
-        text-decoration: none;
-        font-weight: 600;
-        transition: all 0.3s ease;
-      }
-
-      .project-link:hover {
-        color: var(--highlight-hover);
-      }
-
-      /* Skills Section */
-      .skills-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        margin-top: 3rem;
-      }
-
-      .skill-category {
-        background: var(--glass-bg);
-        border: 1px solid var(--glass-border);
-        border-radius: 20px;
-        padding: 2rem;
-        transition: all 0.3s ease;
-      }
-
-      .skill-category:hover {
-        border-color: var(--highlight);
-        transform: translateY(-3px);
-      }
-
-      .skill-category h3 {
-        font-size: 1.3rem;
-        margin-bottom: 1.5rem;
-        color: var(--highlight);
-      }
-
-      .skill-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.8rem;
-      }
-
-      .skill-tag {
-        background: var(--secondary-bg);
-        color: var(--primary-text);
-        padding: 0.5rem 1rem;
-        border-radius: 25px;
-        font-weight: 500;
-        transition: all 0.3s ease;
-      }
-
-      .skill-tag:hover {
-        background: var(--highlight);
-        color: white;
-      }
-
-      /* Research Section */
-      .research-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        gap: 2rem;
-        margin-top: 3rem;
-      }
-
-      .research-paper {
-        background: var(--glass-bg);
-        border: 1px solid var(--glass-border);
-        border-radius: 20px;
-        padding: 2rem;
-        transition: all 0.3s ease;
-      }
-
-      .research-paper:hover {
-        border-color: var(--highlight);
-        transform: translateY(-3px);
-      }
-
-      .paper-status {
-        display: inline-block;
-        background: var(--warning);
-        color: var(--primary-bg);
-        padding: 0.3rem 0.8rem;
-        border-radius: 15px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-      }
-
-      .paper-accepted {
-        display: inline-block;
-        background: var(--success);
-        color: var(--primary-bg);
-        padding: 0.3rem 0.8rem;
-        border-radius: 15px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-      }
-
-      .paper-title {
-        font-size: 1.2rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        line-height: 1.4;
-      }
-
-      .paper-venue {
-        color: var(--accent-text);
-        font-weight: 600;
-        margin-bottom: 1rem;
-      }
-
-      .paper-description {
-        color: var(--secondary-text);
-        line-height: 1.6;
-      }
-
-      /* Contact Section */
-      .contact {
-        background: var(--secondary-bg);
-      }
-
-      .contact-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: start;
-      }
-
-      .contact-info {
-        background: var(--glass-bg);
-        border: 1px solid var(--glass-border);
-        border-radius: 20px;
-        padding: 3rem;
-      }
-
-      .contact-item {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 2rem;
-      }
-
-      .contact-icon {
-        width: 50px;
-        height: 50px;
-        background: var(--highlight);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-      }
-
-      .contact-form {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      .form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      .form-label {
-        color: var(--secondary-text);
-        font-weight: 600;
-      }
-
-      .form-input,
-      .form-textarea {
-        background: var(--glass-bg);
-        border: 1px solid var(--glass-border);
-        border-radius: 10px;
-        padding: 1rem;
-        color: var(--primary-text);
-        font-family: inherit;
-        transition: all 0.3s ease;
-      }
-
-      .form-input:focus,
-      .form-textarea:focus {
-        outline: none;
-        border-color: var(--highlight);
-        box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
-      }
-
-      .form-textarea {
-        resize: vertical;
-        min-height: 120px;
-      }
-
-      /* Footer */
-      footer {
-        background: var(--primary-bg);
-        border-top: 1px solid var(--glass-border);
-        padding: 3rem 2rem;
-        text-align: center;
-      }
-
-      .footer-content {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      .footer-text {
-        color: var(--secondary-text);
-        margin-bottom: 1rem;
-      }
-
-      .footer-social {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-      }
-
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        .nav-menu {
-          display: none;
-        }
-
-        .hero-content {
-          grid-template-columns: 1fr;
-          text-align: center;
-        }
-
-        .hero-avatar {
-          width: 250px;
-          height: 250px;
-        }
-
-        .timeline::after {
-          left: 31px;
-        }
-
-        .timeline-item {
-          width: 100%;
-          padding-left: 4rem;
-          padding-right: 1rem;
-        }
-
-        .timeline-item::after {
-          left: 21px;
-        }
-
-        .contact-container {
-          grid-template-columns: 1fr;
-        }
-
-        .projects-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      /* Scroll animations */
-      .fade-in {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.6s ease;
-      }
-
-      .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    </style>
   </head>
   <body>
-    <!-- Navigation -->
     <nav>
       <div class="nav-container">
-        <div class="nav-logo">Tirath.</div>
+        <a class="nav-logo" href="index.html">Tirath.</a>
         <ul class="nav-menu">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#research" class="nav-link">Research</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>Tirath Bhathawala</h1>
-          <p class="subtitle">
-            I'm a <span class="typing-text" id="typed-text"></span>
-          </p>
-          <p class="hero-description">
-            An aspiring AI researcher passionate about Explainable AI, AI
-            Agents, and Multimodal AI. Currently exploring cutting-edge research
-            while building practical solutions that bridge the gap between
-            theoretical innovation and real-world impact.
-          </p>
-          <div class="hero-buttons">
-            <a
-              href="mailto:tirath.bhathawala@gmail.com"
-              class="btn btn-primary"
-            >
-              <i class="uil uil-envelope"></i> Get In Touch
-            </a>
-            <a
-              href="https://shorturl.at/DByUL"
-              target="_blank"
-              class="btn btn-secondary"
-            >
-              <i class="uil uil-file-download"></i> Download CV
-            </a>
-          </div>
-          <div class="social-links">
-            <a
-              href="https://www.linkedin.com/in/tirath-bhathawala-a58769159/"
-              class="social-link"
-            >
-              <i class="uil uil-linkedin"></i>
-            </a>
-            <a 
-              href="https://github.com/Tirath5504" 
-              class="social-link"
-            >
-              <i class="uil uil-github"></i>
-            </a>
-            <a
-              href="https://scholar.google.com/citations?user=xjNDI7AAAAAJ"
-              class="social-link"
-            >
-              <i class="ai ai-google-scholar-square"></i>
-            </a>
-            <a
-              href="https://mlbeginnershandbook.blogspot.com/"
-              class="social-link"
-            >
-              <i class="uil uil-blogger"></i>
-            </a>
-            <a 
-              href="https://www.instagram.com/04_tirath/" 
-              class="social-link"
-            >
-              <i class="uil uil-instagram"></i>
-            </a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <div class="hero-avatar">
-            <img src="img/tirath_profile_img.jpeg" alt="Tirath Bhathawala" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-      <div class="stats-container">
-        <div class="stat-item fade-in">
-          <span class="stat-number">499</span>
-          <div class="stat-label">GATE DS&AI Rank (out of 60,000+)</div>
-        </div>
-        <div class="stat-item fade-in">
-          <span class="stat-number">9.29</span>
-          <div class="stat-label">CGPA (B.Tech in Computer Engineering with Honors in Intelligent Computing)</div>
-        </div>
-        <div class="stat-item fade-in">
-          <span class="stat-number">6</span>
-          <div class="stat-label">Research Papers & Whitepapers</div>
-        </div>
-        <div class="stat-item fade-in">
-          <span class="stat-number">5</span>
-          <div class="stat-label">Research and Industry Internships</div>
-        </div>
-        <!-- <div class="stat-item fade-in">
-            <span class="stat-number">99.5</span>
-            <div class="stat-label">MHTCET Percentile</div>
-        </div> -->
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section" id="about">
-      <div class="container">
-        <h2 class="section-title fade-in">About Me</h2>
-        <div
-          class="about-content"
-          style="max-width: 800px; margin: 0 auto; text-align: center"
-        >
-          <p
-            style="
-              font-size: 1.2rem;
-              color: var(--secondary-text);
-              line-height: 1.8;
-              margin-bottom: 2rem;
-            "
-            class="fade-in"
-          >
-            I'm a final-year Computer Engineering student at DJSCE, Mumbai,
-            specializing in AI/ML research with a particular focus on
-            <strong style="color: var(--highlight)">Explainable AI</strong>,
-            <strong style="color: var(--highlight)">AI Agents</strong>, and
-            <strong style="color: var(--highlight)">Multimodal AI</strong>. 
-          </p>
-          <p
-            style="
-              font-size: 1.1rem;
-              color: var(--secondary-text);
-              line-height: 1.8;
-            "
-            class="fade-in"
-          >
-            When I'm not diving deep into research papers or coding AI
-            solutions, you'll find me cheering for FC Barcelona (Visça el
-            Barça!), mentoring students at DJS ACM or writing on my blog to make ML concepts accessible to
-            beginners. I believe in learning by doing and exploring diverse
-            domains before specializing during my Master's studies.
-          </p>
-        </div>
-
-        <!-- Skills -->
-        <div class="skills-container">
-          <div class="skill-category fade-in">
-            <h3><i class="uil uil-brain"></i> AI/ML Frameworks</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">TensorFlow</span>
-              <span class="skill-tag">PyTorch</span>
-              <span class="skill-tag">Keras</span>
-              <span class="skill-tag">OpenCV</span>
-              <span class="skill-tag">NLTK</span>
-              <span class="skill-tag">Hugging Face</span>
-              <span class="skill-tag">Transformers</span>
-              <span class="skill-tag">Azure AI</span>
-              <span class="skill-tag">scikit-learn</span>
-            </div>
-          </div>
-          <div class="skill-category fade-in">
-            <h3><i class="uil uil-code-branch"></i> Programming</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">C/C++</span>
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">Rust</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">SQL</span>
-              <span class="skill-tag">HTML/CSS</span>
-            </div>
-          </div>
-          <div class="skill-category fade-in">
-            <h3><i class="uil uil-server"></i> Tools & Technologies</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">Linux</span>
-              <span class="skill-tag">FastAPI</span>
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">Streamlit</span>
-              <span class="skill-tag">Google Colab</span>
-              <span class="skill-tag">Kaggle</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="section" id="experience">
-      <div class="container">
-        <h2 class="section-title fade-in">Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item fade-in">
-            <div class="timeline-content">
-              <div class="timeline-date">March 2025 - August 2025</div>
-              <h3 class="timeline-title">AI Intern</h3>
-              <div class="timeline-company">BrandContext.ai • Mumbai, India</div>
-              <p class="timeline-description">
-                <!-- Developing AI-agentic systems with dynamic graphs for factory
-                operations, optimizing RAG-based legal document processing
-                aligned with RERA rules, and evaluating computer vision models
-                for retail environments including human detection and behavior
-                analysis. -->
-                Finetuning LLM-driven automation framework (browser-use) for 
-                independent website queries on platforms like Looker Studio and 
-                Hootsuite. Developing AI-agentic systems with dynamic graphs for 
-                factory operations and anomaly detection. Evaluated computer-vision 
-                pipelines for retail environments and built speaker-diarization 
-                systems for sales-customer call analytics.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item fade-in">
-            <div class="timeline-content">
-              <div class="timeline-date">October 2024 - May 2025</div>
-              <h3 class="timeline-title">Research Intern</h3>
-              <div class="timeline-company">
-                Indian Institute of Technology, Patna • Remote
-              </div>
-              <p class="timeline-description">
-                Designed MetaSearch, a search-augmented AI Agent for peer review
-                consensus resolution. Developed novel LLM-argumentation systems
-                evaluating 900+ ICLR reviews with high inter-annotator agreement
-                (Cohen's Kappa = 0.834). Created heuristic frameworks based on
-                Cognitive Load Theory for optimizing peer review information
-                density.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item fade-in">
-            <div class="timeline-content">
-              <div class="timeline-date">August 2024 - February 2025</div>
-              <h3 class="timeline-title">AI Intern</h3>
-              <div class="timeline-company">
-                Nvelop Technologies Oy • Helsinki, Finland (Remote)
-              </div>
-              <p class="timeline-description">
-                Authored comprehensive whitepapers on LLM-based requirement
-                generation, benchmarking leading models across diverse NLP
-                metrics. Designed automated workflows in Azure AI Promptflow for
-                RAG tasks, optimizing chunking strategies and reducing document
-                retrieval perplexity by 15%.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item fade-in">
-            <div class="timeline-content">
-              <div class="timeline-date">June 2024 - July 2024</div>
-              <h3 class="timeline-title">Research Assistant</h3>
-              <div class="timeline-company">
-                UIUC+ Summer Research Program • USA (Remote)
-              </div>
-              <p class="timeline-description">
-                Investigated C to Rust transpilation challenges, analyzing
-                results from existing transpilers and CodeLLMs. Categorized bugs
-                in LLM-generated code and improved code quality evaluation
-                frameworks for future research applications.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item fade-in">
-            <div class="timeline-content">
-              <div class="timeline-date">June 2024 - July 2024</div>
-              <h3 class="timeline-title">Python (LLM) Development Intern</h3>
-              <div class="timeline-company">PavePilot AI • USA (Remote)</div>
-              <p class="timeline-description">
-                Developed AI-driven marketing content pipelines by evaluating
-                multiple image generation models. Created platform-specific
-                content with customized AI-generated prompts and style guides
-                for brand-aligned product advertisements using GenAI tools.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-      <div class="container">
-        <h2 class="section-title fade-in">Featured Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card fade-in">
-            <div class="project-icon">
-              <i class="uil uil-shield-check"></i>
-            </div>
-            <h3 class="project-title">DigniFy</h3>
-            <p class="project-description">
-              Multimodal, multilingual hate speech detection system with
-              fine-tuned DistilRoBERTa, OCR-based text extraction, and unified
-              video processing pipeline. Features AI Agent integration with
-              comparative evaluation across multiple LLMs.
+    <main>
+      <section class="hero fade-in">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Tirath Bhathawala</h1>
+            <p class="subtitle">
+              I'm a <span class="typing-text" id="typed-text"></span>
             </p>
-            <div class="project-tech">
-              <span class="tech-tag">HuggingFace</span>
-              <span class="tech-tag">TensorFlow</span>
-              <span class="tech-tag">FastAPI</span>
-              <span class="tech-tag">OCR</span>
-              <span class="tech-tag">NLP</span>
-            </div>
-            <div class="project-links">
-              <a href="#" onclick="window.open('https://github.com/IPD-Hate-Speech-Detection/IPD-Hate-Speech-Detection', '_blank')" class="project-link">GitHub Repository</a>
-            </div>
-          </div>
-
-          <div class="project-card fade-in">
-            <div class="project-icon">
-              <i class="uil uil-feedback"></i>
-            </div>
-            <h3 class="project-title">RakshakRita</h3>
-            <p class="project-description">
-              QR-based Police Feedback System empowering citizens with dynamic
-              feedback reports and interactive geo-spatial visualizations.
-              Features comprehensive NLP pipeline for multilingual support and
-              sentiment analysis.
+            <p class="hero-description">
+              AI researcher passionate about Explainable AI, Agentic systems,
+              and Multimodal intelligence. I explore emerging techniques and
+              turn them into practical solutions that bridge research with
+              real-world impact.
             </p>
-            <div class="project-tech">
-              <span class="tech-tag">BERT</span>
-              <span class="tech-tag">NLTK</span>
-              <span class="tech-tag">Plotly</span>
-              <span class="tech-tag">NetworkX</span>
-              <span class="tech-tag">GeoSpatial</span>
+            <div class="hero-buttons">
+              <a href="contact.html" class="btn btn-primary">
+                <i class="uil uil-envelope"></i> Get In Touch
+              </a>
+              <a
+                href="https://shorturl.at/DByUL"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary"
+              >
+                <i class="uil uil-file-download"></i> Download CV
+              </a>
             </div>
-            <div class="project-links">
-              <a href="#" onclick="window.open('https://rakshakrita0.vercel.app/', '_blank')" class="project-link">Live Demo</a>
-              <a href="#" onclick="window.open('https://github.com/Tirath5504/RJPOLICE_HACK_177_DjDawgs_1/', '_blank')" class="project-link">GitHub Repository</a>
-            </div>
-          </div>
-
-          <div class="project-card fade-in">
-          <div class="project-icon">
-            <i class="uil uil-heartbeat"></i>
-          </div>
-          <h3 class="project-title">Optima</h3>
-          <p class="project-description">
-            Computer Vision based healthcare solution for real-time asthma pump usage
-            analysis. Implements advanced computer vision for posture
-            detection, shake tracking, and pump-to-face distance measurement
-            to provide actionable patient insights.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">OpenCV</span>
-            <span class="tech-tag">Computer Vision</span>
-            <span class="tech-tag">Healthcare</span>
-            <span class="tech-tag">Python</span>
-          </div>
-          <div class="project-links">
-            <a href="#" onclick="window.open('https://github.com/Tirath5504/Codeshastra_Bogan_Breakers', '_blank')" class="project-link">GitHub Repository</a>
-          </div>
-        </div>
-
-          <!-- <div class="project-card fade-in">
-            <div class="project-icon">
-              <i class="uil uil-microscope"></i>
-            </div>
-            <h3 class="project-title">ML & CV Fundamentals</h3>
-            <p class="project-description">
-              Comprehensive implementation of medical image segmentation models
-              for RSNA Breast Cancer dataset and various computer vision models
-              for object detection and classification across multiple standard
-              datasets.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">PyTorch</span>
-              <span class="tech-tag">Medical Imaging</span>
-              <span class="tech-tag">Segmentation</span>
-              <span class="tech-tag">Classification</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link">View Portfolio</a>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Research Section -->
-    <section class="section" id="research">
-      <div class="container">
-        <h2 class="section-title fade-in">Research & Publications</h2>
-        <div class="research-grid">
-          <div class="research-paper fade-in">
-            <div class="paper-accepted">Accepted</div>
-            <h3 class="paper-title">
-              Dynamic Optimization of Peer Review Length Using Information Density Analysis
-            </h3>
-            <div class="paper-venue">
-              <a href="#" onclick="window.open('https://link.springer.com/article/10.1007/s11192-025-05416-w', '_blank')" class="project-link">Scientometrics Journal</a>
-            </div>
-              <p class="paper-description">
-                A novel framework for optimizing peer review lengths through information density analysis, integrating metrics for content relevance and argument strength based on Cognitive Load and Discourse Analysis theories.
-              </p>
-          </div>
-
-          <div class="research-paper fade-in">
-            <div class="paper-status">Under Review</div>
-            <h3 class="paper-title">
-              MetaSearch: Search-Augmented LLM with Reasoning for Consensus Resolution in Peer Review
-            </h3>
-            <div class="paper-venue">IIT Patna Collaboration</div>
-            <p class="paper-description">
-              A novel AI Agent system combining disagreement detection and fact-grounded synthesis 
-              for automated meta-review decision-making in academic peer review processes.
-            </p>
-          </div>
-
-          <div class="research-paper fade-in">
-            <div class="paper-status">Under Review</div>
-            <h3 class="paper-title">
-              From Black Box to Glass House: Argumentation Theory as a Bridge Between LLM Opacity and Peer Review Transparency
-            </h3>
-            <div class="paper-venue">IIT Patna Collaboration</div>
-            <p class="paper-description">
-              A transparent framework for peer review quality assessment by combining LLM analysis with argumentation theory, 
-              achieving high agreement with human annotations in evaluating reviews.
-            </p>
-          </div>
-
-          <!-- <div class="research-paper fade-in">
-            <div class="paper-status">Under Review</div>
-            <h3 class="paper-title">
-              Cognitive Load Optimization in Peer Review: A Heuristic Framework
-            </h3>
-            <div class="paper-venue">IIT Patna Collaboration</div>
-            <p class="paper-description">
-              A heuristic system to dynamically optimize the length of peer reviews 
-              by balancing brevity and thoroughness using information density 
-              and argumentation metrics to improve review quality.
-            </p>
-          </div> -->
-
-          <div class="research-paper fade-in">
-            <div class="paper-status">Under Review</div>
-            <h3 class="paper-title">Unmasking Bias: LLM-Driven AI Agents in Academic Peer Review</h3>
-            <div class="paper-venue">IIT Patna Collaboration</div>
-            <p class="paper-description">
-              An AI framework using LLM agents to automatically detect biases in
-              peer reviews by analyzing sentiment, coherence, and consistency, 
-              offering actionable recommendations for conference organizers.
-            </p>
-          </div>
-
-          <div class="research-paper fade-in">
-            <div class="paper-status">Whitepaper</div>
-            <h3 class="paper-title">
-              LLM-Based Requirement Generation: Evaluation Pipeline and
-              Benchmarking
-            </h3>
-            <div class="paper-venue">Nvelop Technologies Oy</div>
-            <p class="paper-description">
-              Comprehensive 70-page analysis benchmarking DeepSeek R1, GPT-4o,
-              Gemini 2.0, and LLaMA 3.2 across diverse NLP metrics including
-              BLEU, Levenshtein, and Jaccard Similarity.
-            </p>
-          </div>
-
-          <div class="research-paper fade-in">
-            <div class="paper-status">Under Review</div>
-            <h3 class="paper-title">
-              DigniFy: Multimodal Hate Speech Detection in Digital Platforms
-            </h3>
-            <div class="paper-venue">College Research Collaboration</div>
-            <p class="paper-description">
-              Comprehensive study on multimodal, multilingual hate speech
-              detection with practical real-world applications and impact
-              assessment across various digital platforms.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="section" style="background: var(--secondary-bg)">
-      <div class="container">
-        <h2 class="section-title fade-in">Achievements & Recognition</h2>
-        <div class="projects-grid">
-          <div class="project-card fade-in">
-            <div class="project-icon">
-              <i class="uil uil-trophy"></i>
-            </div>
-            <h3 class="project-title">GATE DS&AI Rank 499</h3>
-            <p class="project-description">
-              Achieved All India Rank 499 in GATE Data Science and Artificial
-              Intelligence examination among over 60,000 candidates,
-              demonstrating strong foundational knowledge in AI/ML concepts.
-            </p>
-          </div>
-
-          <div class="project-card fade-in">
-            <div class="project-icon">
-              <i class="uil uil-award"></i>
-            </div>
-            <h3 class="project-title">Amazon ML Challenge Rank 292</h3>
-            <p class="project-description">
-              Achieved rank 292 out of 70,000+ registrations in the Amazon ML Challenge 2024, demonstrating excellence in machine learning problem-solving.
-            </p>
-          </div>
-
-          <div class="project-card fade-in">
-            <div class="project-icon">
-              <i class="uil uil-code-branch"></i>
-            </div>
-            <h3 class="project-title">CodeBounty 2024 Winner</h3>
-            <p class="project-description">
-              Won the college competitive programming contest, showcasing
-              algorithmic thinking and problem-solving skills essential for AI
-              research and development.
-            </p>
-          </div>
-
-          <div class="project-card fade-in">
-            <div class="project-icon">
-              <i class="uil uil-shield"></i>
-            </div>
-            <h3 class="project-title">Rajasthan Police Hackathon Finalist</h3>
-            <p class="project-description">
-              Reached finals as ML Lead in the prestigious Rajasthan Police
-              Hackathon 2024, developing innovative solutions for law
-              enforcement challenges.
-            </p>
-          </div>
-
-          <div class="project-card fade-in">
-            <div class="project-icon">
-              <i class="uil uil-users-alt"></i>
-            </div>
-            <h3 class="project-title">sktime Mentoring Program</h3>
-            <p class="project-description">
-              Selected as a mentee in the prestigious sktime mentoring program under Dr. Franz Kiraly, focusing on time series analysis and machine learning research.
-            </p>
-          </div>
-
-          <!-- <div class="project-card fade-in">
-            <div class="project-icon">
-              <i class="uil uil-globe"></i>
-            </div>
-            <h3 class="project-title">MHTCET Rank 712</h3>
-            <p class="project-description">
-              Achieved All India Rank 712 in MHTCET examination, demonstrating
-              strong foundational knowledge in science and mathematics.
-            </p>
-          </div> -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-      <div class="container">
-        <h2 class="section-title fade-in">Let's Connect</h2>
-        <div class="contact-container">
-          <div class="contact-info fade-in">
-            <h3 style="margin-bottom: 2rem; color: var(--highlight)">
-              Get In Touch
-            </h3>
-            <p
-              style="
-                margin-bottom: 2rem;
-                color: var(--secondary-text);
-                line-height: 1.6;
-              "
-            >
-              I'm always excited to discuss AI research, potential
-              collaborations, or just chat about the latest developments in
-              machine learning. Whether you're a fellow researcher, industry
-              professional, or student, feel free to reach out!
-            </p>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="uil uil-envelope"></i>
-              </div>
-              <div>
-                <strong>Email</strong><br />
-                <a
-                  href="mailto:tirath.bhathawala@gmail.com"
-                  style="color: var(--highlight); text-decoration: none"
-                >
-                  tirath.bhathawala@gmail.com
-                </a>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="uil uil-phone"></i>
-              </div>
-              <div>
-                <strong>Phone</strong><br />
-                <span style="color: var(--secondary-text)">+91 9137583387</span>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/tirath-bhathawala-a58769159/"
+                class="social-link"
+                aria-label="LinkedIn"
+              >
                 <i class="uil uil-linkedin"></i>
-              </div>
-              <div>
-                <strong>LinkedIn</strong><br />
-                <a
-                  href="https://www.linkedin.com/in/tirath-bhathawala-a58769159/"
-                  style="color: var(--highlight); text-decoration: none"
-                  target="_blank"
-                >
-                  Connect with me
-                </a>
-              </div>
+              </a>
+              <a
+                href="https://github.com/Tirath5504"
+                class="social-link"
+                aria-label="GitHub"
+              >
+                <i class="uil uil-github"></i>
+              </a>
+              <a
+                href="https://scholar.google.com/citations?user=xjNDI7AAAAAJ"
+                class="social-link"
+                aria-label="Google Scholar"
+              >
+                <i class="ai ai-google-scholar-square"></i>
+              </a>
+              <a href="blogs.html" class="social-link" aria-label="Blog">
+                <i class="uil uil-blogger"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/04_tirath/"
+                class="social-link"
+                aria-label="Instagram"
+              >
+                <i class="uil uil-instagram"></i>
+              </a>
             </div>
           </div>
-
-          <form class="contact-form fade-in" id="contact-form">
-            <div class="form-group">
-              <label class="form-label">Your Name</label>
-              <input type="text" class="form-input" name="name" required />
+          <div class="hero-image">
+            <div class="hero-avatar">
+              <img src="img/tirath_profile_img.jpeg" alt="Tirath Bhathawala" />
             </div>
-
-            <div class="form-group">
-              <label class="form-label">Your Email</label>
-              <input type="email" class="form-input" name="email" required />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">Subject</label>
-              <input type="text" class="form-input" name="subject" required />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">Message</label>
-              <textarea
-                class="form-textarea"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%">
-              <i class="uil uil-message"></i> Send Message
-            </button>
-          </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
+      <section class="section alt-bg fade-in">
+        <div class="container">
+          <h2 class="section-title">Highlights</h2>
+          <p class="section-description">
+            Quick stats that capture my journey across competitive exams,
+            academics, research, and industry collaborations.
+          </p>
+          <div class="stats-container">
+            <div class="stat-item">
+              <span class="stat-number">499</span>
+              <div class="stat-label">GATE DS&amp;AI Rank (out of 60,000+)</div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">9.29</span>
+              <div class="stat-label">
+                CGPA (B.Tech Comp Engg with Honors in Intelligent Computing)
+              </div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">6</span>
+              <div class="stat-label">Research Papers &amp; Whitepapers</div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5</span>
+              <div class="stat-label">Research &amp; Industry Internships</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <div class="footer-content">
         <p class="footer-text">
@@ -1452,183 +153,42 @@
           <a
             href="https://www.linkedin.com/in/tirath-bhathawala-a58769159/"
             class="social-link"
+            aria-label="LinkedIn"
           >
             <i class="uil uil-linkedin"></i>
           </a>
-          <a href="https://github.com/Tirath5504" class="social-link">
+          <a
+            href="https://github.com/Tirath5504"
+            class="social-link"
+            aria-label="GitHub"
+          >
             <i class="uil uil-github"></i>
           </a>
           <a
             href="https://scholar.google.com/citations?user=xjNDI7AAAAAJ"
             class="social-link"
+            aria-label="Google Scholar"
           >
             <i class="ai ai-google-scholar-square"></i>
           </a>
           <a
             href="https://mlbeginnershandbook.blogspot.com/"
             class="social-link"
+            aria-label="Blog"
           >
             <i class="uil uil-blogger"></i>
           </a>
-          <a href="https://www.instagram.com/04_tirath/" class="social-link">
+          <a
+            href="https://www.instagram.com/04_tirath/"
+            class="social-link"
+            aria-label="Instagram"
+          >
             <i class="uil uil-instagram"></i>
           </a>
         </div>
       </div>
     </footer>
 
-    <script>
-      // Typing animation
-      const texts = [
-        "AI Researcher",
-        "ML Developer",
-        "Tech Explorer",
-        "Problem Solver",
-        "Barcelona Fan",
-      ];
-      let textIndex = 0;
-      let charIndex = 0;
-      let isDeleting = false;
-      const typedTextElement = document.getElementById("typed-text");
-
-      function typeText() {
-        const currentText = texts[textIndex];
-
-        if (isDeleting) {
-          typedTextElement.textContent = currentText.substring(
-            0,
-            charIndex - 1
-          );
-          charIndex--;
-        } else {
-          typedTextElement.textContent = currentText.substring(
-            0,
-            charIndex + 1
-          );
-          charIndex++;
-        }
-
-        if (!isDeleting && charIndex === currentText.length) {
-          setTimeout(() => (isDeleting = true), 2000);
-        } else if (isDeleting && charIndex === 0) {
-          isDeleting = false;
-          textIndex = (textIndex + 1) % texts.length;
-        }
-
-        const typeSpeed = isDeleting ? 50 : 100;
-        setTimeout(typeText, typeSpeed);
-      }
-
-      typeText();
-
-      // Smooth scrolling for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
-        });
-      });
-
-      // Active navigation highlighting
-      const sections = document.querySelectorAll("section[id]");
-      const navLinks = document.querySelectorAll(".nav-link");
-
-      function highlightActiveSection() {
-        let currentSection = "";
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop - 100;
-          const sectionHeight = section.offsetHeight;
-          if (
-            window.scrollY >= sectionTop &&
-            window.scrollY < sectionTop + sectionHeight
-          ) {
-            currentSection = section.getAttribute("id");
-          }
-        });
-
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${currentSection}`) {
-            link.classList.add("active");
-          }
-        });
-      }
-
-      window.addEventListener("scroll", highlightActiveSection);
-
-      // Fade in animation on scroll
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      }, observerOptions);
-
-      document.querySelectorAll(".fade-in").forEach((el) => {
-        observer.observe(el);
-      });
-
-      // Contact form submission
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          const formData = new FormData(this);
-          const data = {};
-          formData.forEach((value, key) => {
-            data[key] = value;
-          });
-
-          fetch("https://hook.eu2.make.com/3ardugz0lrynnm9tix5bereepmsrher9", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-          })
-            .then((response) => {
-              if (response.ok) {
-                alert("Thank you! Your message has been sent successfully.");
-                this.reset();
-              } else {
-                alert(
-                  "There was an error sending your message. Please try again."
-                );
-              }
-            })
-            .catch((error) => {
-              alert(
-                "There was an error sending your message. Please try again."
-              );
-              console.error("Error:", error);
-            });
-        });
-
-      // Add some interactive hover effects
-      document
-        .querySelectorAll(".project-card, .research-paper")
-        .forEach((card) => {
-          card.addEventListener("mouseenter", function () {
-            this.style.transform = "translateY(-10px) scale(1.02)";
-          });
-
-          card.addEventListener("mouseleave", function () {
-            this.style.transform = "translateY(0) scale(1)";
-          });
-        });
-    </script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
