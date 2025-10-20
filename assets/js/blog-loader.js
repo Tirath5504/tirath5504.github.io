@@ -48,14 +48,32 @@ function renderFeaturedHighlight() {
 
   const highlightContainer = document.getElementById("featured-highlight");
   highlightContainer.innerHTML = `
-    <h2>Latest Highlight</h2>
-    <p>
-      <strong>${featured.title}</strong><br />
-      ${featured.excerpt}
-    </p>
-    <a href="#blog-${featured.id}" class="blog-hero-link" onclick="event.preventDefault(); loadFullBlog('${featured.id}')">
-      Read Highlight
-    </a>
+    ${
+      featured.thumbnail
+        ? `<img src="${featured.thumbnail}" alt="${featured.title}" class="blog-hero-card-image" />`
+        : ""
+    }
+    <div class="blog-hero-card-content">
+      <h2>Latest Highlight</h2>
+      <h3>${featured.title}</h3>
+      <div class="blog-hero-meta">
+        <span class="blog-card-badge ${featured.category}">${capitalize(
+    featured.category
+  )}</span>
+        <span><i class="uil uil-clock"></i> ${featured.readTime}</span>
+        <span><i class="uil uil-schedule"></i> ${formatDate(
+          featured.date
+        )}</span>
+      </div>
+      <p>${featured.excerpt}</p>
+      <a href="#blog-${
+        featured.id
+      }" class="blog-hero-link" onclick="event.preventDefault(); loadFullBlog('${
+    featured.id
+  }')">
+        Read Full Article
+      </a>
+    </div>
   `;
 }
 
@@ -77,24 +95,31 @@ function renderBlogCards(blogs) {
       data-category="${blog.category}"
       data-tags="${blog.tags.join(" ").toLowerCase()}"
     >
-      <div class="blog-card-header">
-        <span class="blog-card-badge ${blog.category}">${capitalize(
+      ${
+        blog.thumbnail
+          ? `<img src="${blog.thumbnail}" alt="${blog.title}" class="blog-card-thumbnail" />`
+          : ""
+      }
+      <div class="blog-card-body">
+        <div class="blog-card-header">
+          <span class="blog-card-badge ${blog.category}">${capitalize(
         blog.category
       )}</span>
-        <span class="blog-card-date">${formatDate(blog.date)}</span>
-      </div>
-      <h3>${blog.title}</h3>
-      <p>${blog.excerpt}</p>
-      <div class="blog-card-tags">
-        ${blog.tags.map((tag) => `<span>#${tag}</span>`).join("")}
-      </div>
-      <a href="#blog-${
-        blog.id
-      }" class="blog-card-link" onclick="event.preventDefault(); loadFullBlog('${
+          <span class="blog-card-date">${formatDate(blog.date)}</span>
+        </div>
+        <h3>${blog.title}</h3>
+        <p>${blog.excerpt}</p>
+        <div class="blog-card-tags">
+          ${blog.tags.map((tag) => `<span>#${tag}</span>`).join("")}
+        </div>
+        <a href="#blog-${
+          blog.id
+        }" class="blog-card-link" onclick="event.preventDefault(); loadFullBlog('${
         blog.id
       }')">
-        Read more
-      </a>
+          Read more
+        </a>
+      </div>
     </article>
   `
     )
@@ -120,6 +145,11 @@ async function loadFullBlog(blogId) {
     // Render the full blog article
     const articleContent = document.getElementById("blog-article-content");
     articleContent.innerHTML = `
+      ${
+        blog.thumbnail
+          ? `<img src="${blog.thumbnail}" alt="${blog.title}" class="blog-detail-hero-image" />`
+          : ""
+      }
       <header class="blog-detail-header">
         <div class="blog-detail-meta">
           <span class="blog-detail-badge ${blog.category}">${capitalize(
@@ -145,8 +175,14 @@ async function loadFullBlog(blogId) {
     initializeLazyLoading();
 
     // Show article view, hide grid
+    const articleView = document.getElementById("blog-article-view");
     document.getElementById("blog-grid").parentElement.style.display = "none";
-    document.getElementById("blog-article-view").style.display = "block";
+    articleView.style.display = "block";
+
+    // Add visible class to trigger fade-in animation
+    setTimeout(() => {
+      articleView.classList.add("visible");
+    }, 10);
 
     // Update URL hash
     window.location.hash = `blog-${blogId}`;
@@ -257,7 +293,7 @@ function setupBlogFilters() {
 
 // Setup blog search
 function setupBlogSearch() {
-  const searchInput = document.getElementById("blog-search-input");
+  const searchInput = document.getElementById("blog-search");
   if (!searchInput) return;
 
   searchInput.addEventListener("input", (e) => {
@@ -276,7 +312,7 @@ function setupBlogSearch() {
 
 // Setup article view navigation (back button)
 function setupArticleView() {
-  const backButton = document.getElementById("back-to-blogs");
+  const backButton = document.getElementById("back-to-grid");
   if (!backButton) return;
 
   backButton.addEventListener("click", () => {

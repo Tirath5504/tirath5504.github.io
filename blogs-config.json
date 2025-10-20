@@ -10,19 +10,21 @@
       "readTime": "6 min read",
       "tags": ["Productivity", "Organization", "Personal Development"],
       "featured": false,
+      "thumbnail": "img/blogs/weekly_review/weekly_thumbnail.png",
       "file": "blogs/weekly-review-system.md"
-    }, 
+    },
     {
-    "id": "my-gre-experience",
-    "title": "GRE: A Honest Review",
-    "date": "2025-10-20",
-    "category": "general",
-    "excerpt": "A comprehensive overview of my GRE preparation journey, including study strategies, resources, and tips for success.",
-    "author": "Tirath Bhathawala",
-    "readTime": "10 min read",
-    "tags": ["GRE", "Standardized Testing", "Does anyone ever see these?"],
-    "featured": true,
-    "file": "blogs/my-gre-experience.md"
+      "id": "my-gre-experience",
+      "title": "GRE: A Honest Review",
+      "date": "2025-10-20",
+      "category": "general",
+      "excerpt": "A comprehensive overview of my GRE preparation journey, including study strategies, resources, and tips for success.",
+      "author": "Tirath Bhathawala",
+      "readTime": "10 min read",
+      "tags": ["GRE", "Standardized Testing", "Does anyone ever see these?"],
+      "featured": true,
+      "thumbnail": "img/blogs/gre/congrats.png",
+      "file": "blogs/my-gre-experience.md"
     }
   ]
 }
