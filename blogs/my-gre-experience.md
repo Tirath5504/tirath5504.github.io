@@ -1,79 +1,126 @@
 # How I prepared for the GRE (and why you should avoid repeating me)
 
-Graduate Record Examinations - very intimidating name. You peek into its syllabus. Huh. Math and English. That doesn't seem so hard. You solve a few Quant (just call it math ETS, it ain't that deep) problems and you gain confidence (especially if you are an engineering student like me). You look up some Verbal problems - WTF. How and why am I supposed to know the meanings of words like _quixotic, lassitude and inveigle_?? This is just the start of a journey where your confidence will keep oscillating between "I HAVE BECOME DEATH, THE DESTROYER OF EXAMS" to "pls someone explain what is the answer of this RC question - i am confused between options C and D - wait, _answer is A???_". I am sharing my journey below hoping that it will help at least some of y'all to avoid the mistakes I made. 
+Graduate Record Examinations: big name, bigger nerves. At first glance it seemed simple: math and English. As an engineering student I assumed Quant would be easy and Verbal a minor chore. The test turned out to be more complicated: it blends both skills across sections, and the real limiter was not content gaps but small, repeatable mistakes.
 
-![img](img/blogs/gre/mood_swing.png)
+Over the next two months my confidence swung between “I can solve anything” and “please someone tell me which option is correct.” I’m sharing what worked, what didn’t, and the concrete changes that turned my prep around so you don’t have to repeat all my mistakes.
 
-## How the beginning was the root cause of my downfall (A New Hope)
+![Mood swings during prep](img/blogs/gre/mood_swing.png)
 
-As an engineering student, I am supremely confident in my Math skills - _"if I can solve fourier problems, what's algebra and arithmetic"_. I planned to complete Quant in a couple of weeks and then move onto Verbal (_shiver_). BIG MISTAKE. Never do Quant and Verbal separately. The exam is designed to evaluate how well you juggle quantitative and verbal reasoning together. There are four scored sections (five if you count AWA - _but who cares about that am I right?_) with Quant and Verbal spread across the test. On some days, I would be extremely motivated (50 correct answers in a row - _I am a genius_) and solve a large amount of questions while most other days I would be less enthusiastic (_do I really need to practice solving quadratic equations?_). Consistency was my biggest enemy and by the end of the third week, I had only adequately prepared for the first two quant sections with Geometry and Data Analysis still remaining. I had originally planned to give the GRE in six weeks with two weeks given to Quant and four for Verbal but now I was halfway through my prep time having done only the Arithmetic and Algebra, arguably the easiest parts of the entire exam. I was doomed. 
+---
 
-I had originally planned to give the GRE in the first week of August, with most of my prep time slotted in July, but by 20th July, I was still only halfway through Quant. I panicked. This was not necessarily the worst outcome since I also buckled up to grind it out but if I had been slightly more calm, I would have recognized that adhering to the original schedule was an impossibility. Nevertheless, I finished the rest of Quant in one week, completing tons of questions and concepts everyday. In hindsight, I probably rushed through it - focusing more on quantity and not quality - but hindsight is 20-20. Now that I had finished Quant, I was again in a dilemma. I had originally planned to finish a majority of preparation before my college began in August but now I am left with finishing the entirety of Verbal along with college. I am, once again, doomed. 
+## 1. Where I went wrong (early mistakes)
 
-![img](img/blogs/gre/gre_mcq.png)
+My initial plan was naïve: two weeks for Quant, then jump to Verbal. Two problems with that:
 
-## The Comeback (Revenge of the Jedi)
+- **Siloed practice.** The GRE is a single test with interleaved Quant and Verbal sections. Practicing them in isolation left me unprepared for the mental context switches on test day.
+- **Inconsistent effort.** I swung between hyper-productive days (50 correct answers in a row) and days I couldn’t be bothered to review basic algebra. That inconsistency meant I finished only arithmetic and algebra by week three; Geometry and Data Analysis were still pending.
 
-I bit the bullet. Changing the exam date from the initially planned 10th of August to 1st of September gave me breathing space. I took one whole weekend planning exactly what I will do each week. On the same weekend, I attempted a free "diagnostic" test. I screwed up. A 165 in Quant and a 152 in Verbal might seem decent to most but considering the goals I had set for myself and the scores required for my target universities, this was abysmal. But this is exactly why I gave the test. It served as both a reality check and help my pinpoint my weaknesses exactly. 
+I rushed the tail end of Quant (focusing on quantity, not quality), then entered college with Verbal still to be completed: a timing disaster.
 
-I had no apparent conceptual problem in Quant; it was my mindset that was the issue. Never striving for perfection, I accepted that I can get a couple of "silly" mistakes in a small set of twelve or fifteen questions. This is not ideal. To get that top score close to 170, you HAVE to be immaculate. This is why I reserved one quant day after every three verbal days solely for practice tests and most importantly, question diagnosis. Why did I make a so-called silly mistake became a personal vengeance. Slowly, but surely, I began acing every quant test. I continued doing this till the end of my prep journey. 
+![Too many MCQs, too little focus](img/blogs/gre/gre_mcq.png)
 
-Finally, coming to Verbal. From my diagnostic test, I knew I had to primarily improve in two major aspects - vocabulary and RC strategies. I had already nailed down the art of solving TC and SE questions - look at the question AFTER making pairs from the options for SE and figuring out the tense, PoS (Part of Speech) and connotation (positive/negative) associated with each blank for TC. The only SE and TC questions I erred in were the ones in which the meaning of a word in the question or the option itself were unknown. 
+---
 
-The RC questions were a major source of frustration for me since i) they contained highly academic texts, sometimes from niche domains like Art where I had little to no prior expertise or exposure of, ii) identifying what the question asked for (classifying the _type_ of question) and iii) the options of each medium-hard RC question were extremely similar to one another with almost every question containing an ingrain of "correctness". I gave in. I watched several RC strategy videos and learnt how to attack each and every type of question. This is where I devoted the majority of my prep time (but also proved the most fruitful in the end). 
+## 2. The turning point (diagnostics and planning)
 
-![img](img/blogs/gre/old_new_problems.png)
+I postponed the test three weeks and took a diagnostic mock: **165Q / 152V**. Not catastrophic, but not target-grade either. The diagnostic helped me in two concrete ways:
 
-## Test Day Drama (Revenge of the Sith)
+1. **Prioritize weaknesses.** Quant errors were mostly careless; Verbal problems were vocabulary and RC strategy.  
+2. **Make a realistic plan.** I adopted a rhythm: **three Verbal days → one Quant day** (Quant days were dedicated to timed practice + error forensics).
 
-I was done with most of the preparation by the last week of August and began giving practice tests every two days. I attempted six full length practice tests (including the two free PowerPrep and another two PowerPrepPlus tests provided by ETS) scoring an average of 168 in Quant and 158 in Verbal. Needless to say, I was supremely confident going into test day. The night before the exam, I revised the entirety of vocab, all major Quant concepts and formulae as well as all of my RC, SE and TC strategies. I was so pumped that I created a 'time management' sheet detailing exactly how much time I was going to devote for every type of question in all of the sections. I had already gone through a AWA strategy video and was getting adequate results. 
+Fixing careless Quant mistakes required disciplined timed practice and a forensic review of each missed question. For Verbal, the focus became vocabulary throughput and deliberate RC question classification.
 
-I began THE day by solving a mini-exam of 20 total Quant and Verbal questions. I aced every Quant question and got 8/10 in Verbal. Again, a boost to my confidence. I reached the test center early and noted that no one else was scheduled to give the exam with me (I asked). No distractions, yay! I noticed with relief that the headphone and keyboard provided by the center was of decent quality. 
+![Old vs new practice problems](img/blogs/gre/old_new_problems.png)
 
-I began the test. Standard AWA topic - I was able to conjure up reasons and examples quickly with a great hook. My confidence further increased as I moved through every Quant question recognizing every one of them as being similar to questions I had solved in the past. Brilliant. Verbal wasn't too hard but also not too easy. This wasn't a huge issue since I had planned for this and didn't need to ace every question. The second quant section was also quite normal albeit slightly lengthy. There were a couple of DA questions I probably should have checked again - but surely I won't make a silly mistake given the extensive preparation I had done (wink, wink). I was still so confident that I wrote on the rough sheet provided by the test center that I expected a 168 in Quant at least before moving onto the final section. The second verbal section proceeded in a similar manner as the first with some "hard" but expected questions. I was sufficiently happy by the end of the test and carefully chose to report the scores (why will anyone cancel the scores, ETS?). 
+---
 
-You probably realize that I am building up to a crescendo. You aren't wrong. I FLUNKED THE TEST - 159 in Verbal (decent and expected) but a 164 (!!!) in Quant. This was the lowest I had scored in all of my practice tests by a decent distance and actively hurt my profile instead of enhancing it since almost all of my target universities required a high Quant score (>=167) with more leeway given for Verbal but a strict margin for Quant. I was devastated since this meant that I had to either give a huge chunk of my future time retaking the test or exclude few universities entirely. 
+## 3. Test day (first attempt and lessons learned)
 
-<!-- ![img](img/blogs/gre/test_day.png)  -->
+I finished the main stretch of preparation feeling confident, my full-length mocks had averaged 168Q / 158V, and went into test day with a tight revision plan: vocab review, a checklist of Quant formulae, RC and TC/SE strategies, and a time-management sheet that specified how long to spend on each question type. I even warmed up with a 20-question mini-test on the way to the centre and felt sharp.
 
-## The Retake (The Force Awakens)
+The test itself started well: AWA flowed, the first Quant section felt familiar, and Verbal was manageable. The centre was calm (I remember noting the decent keyboard and headphones), and the second Quant section was “normal but slightly lengthy.” By the time I left the room I was convinced I’d scored at least in the high 160s for Quant.
 
-Given the current scenario for international students in most countries, I understood that I will have to mainly target the very best universities to get a decent ROI in this _adventure_. For this, I HAD to retake the GRE. But not right away. I decided to give the TOEFL first (article on this soon!) and then had to give my college mid-term examinations. This took twenty days. In the middle of all this, I stumbled upon an interesting quote, apparently said by the late Albert Einstein, which determined my approach for the retake - "Insanity is doing the same thing over and over again and expecting different results". Claiming this as my mantra, I decided to go against the grain and actively be as unprepared as possible (lol). That didn't mean that I didn't do _anything_ - I solved several ETS questions from their official books (goldmine this) but I didn't watch a single new (or old) strategy or conceptual video. I went through ETS Math Review for Quant and a small vocab sheet of difficult words for Verbal. That's it. I am, officially, insane. 
+The score report was a reality check: 164Q / 159V. The Verbal score was close to practice, but the Quant score was a clear outlier: below my practice range and below the threshold for several target programs. That single shortfall hurt my profile more than I expected and taught me three hard lessons:
 
-Night before the test day, I re-watched GoT S8. I figured Karma would help me here and the self-imposed punishment would yield a better result. _Have I mentioned that I am insane?_ Woke up listening to [God's Plan](https://open.spotify.com/track/6DCZcSspjsKoFjzjrWoCdn?si=14dace52ee274c40) and [Dear God](https://open.spotify.com/track/6U8OunNdqjWHh6zZzTjiBF?si=b650f6fecc834c38). I was vibing to [Hanuman Chalisa](https://open.spotify.com/track/6H7fLdt0AeWpuxUKXuXWrx?si=29d893d569614076) on the train to the center. A peculiar mood, indeed. As I reached the center, I felt much more anxious and stupid about my approach. There were 5-6 students ahead of me giving the test at the same time so more distractions (yay?). A much more vague AWA prompt. Not a great start. Moving onto the first Quant section, I felt anxious about a couple of problems but submitted it due to lack of time. Both the Verbal sections were similar to my original attempt albeit feeling slightly "easier". The second Quant section was so easy that I finished with ten minutes to spare. I cross-checked every question low-key wondering whether I had flunked the earlier Quant section and landed with an "easy" second section. Fully expected a <320, I reported the scores. _i aced the test - 170 Q, 162 V, 332/340 overall._ I was so surprised I disturbed the candidate besides me and quickly apologized. Only one thought ran through my mind as I exited the center - Einstein was a bloody genius! 
+- **Small, repeatable mistakes matter more than conceptual gaps.** My prep had left a few “silly” behaviours (rushed arithmetic steps, rushed DA interpretation, sloppy time checks) that I was still making under pressure. Those are the errors that turn a 168 average into a 164 on the real day.
+- **Mocks must be diagnostic, not just score-driven.** It’s easy to treat mock scores as the only metric. What matters more is why you miss questions, the root cause (timing, careless arithmetic, misreading), and whether the same error repeats.
+- **Test-day conditions expose weak habits.** My time-management sheet looked great on paper, but under timed pressure I sometimes submitted answers without the final sanity-check I’d reliably done during practice.
 
-![img](img/blogs/gre/success.png)
+If you take only one practical idea from this section: track every mistake in a tiny log (question type → error type → fix). If the same error shows up twice in three tests, it becomes a non-negotiable practice item until it stops recurring.
 
-## The quest to find the perfect material (and why it is harder than finding a needle in a haystack)
+---
 
-One other thing I want y'all to note is that you should carefully choose the prep material you will use. I was confused between the notes and questions provided by the counselling service I had booked for the entirety of the "Study Abroad" (hint) journey, the official materials provided by ETS and other reputed external websites. Doom scrolling reddit didn't help me whatsoever. There is a ton of DECENT material available on the Internet, some of it free and some of it paid. My only advice would be to stick to any ONE of the resources available since the quality of the material doesn't really matter that much compared to the work you put in. I will, of course, suggest what material helped me but it REALLY doesn't matter. Just pick [one](https://pickerwheel.com). 
+## 4. The retake (a counterintuitive strategy)
 
-Ok enough dilly-dallying. Here's what I used and I recommend to use: [GregMat](https://www.gregmat.com) (I swear this post isn't sponsored). BUT, you don't have to go through every goddamn video or problem. You don't even have to follow the plans they recommend. I would actually advise against those plans. Note that this was particularly specific for my, an Indian CS Undergrad's, situation. This is what worked best for me: 
+After the shock of my first score, I didn’t rush straight back into the same preparation loop. I scheduled TOEFL and college midterms first (about twenty days), and then deliberately changed my approach based on one guiding thought, the Einstein quip I kept on repeat:
 
-- Quant: Go through ETS's [GRE Math Review](https://www.ets.org/pdfs/gre/gre-math-review.pdf) and all of the questions from the official GRE books. If required, then only go through the timed Quant exams on GregMat. Personally, I didn't feel the need to go through any quant concept or strategy videos but you may use PrepSwift or Khan Academy's playlists. 
-- Vocab: Use GregMat's app to learn vocab through the flashcards (laptop users can check [here](https://quizlet.com/user/ahtn/folders/gregmat-vocab-groups-1-38-and-double-duty-words?funnelUUID=e4922aa9-9bf7-4c70-9980-e96912234427)). Thoroughly utilize the [Vocab Mountain](https://www.gregmat.com/mountains/vocab-mountain) feature for revision. Go through 20 groups at least - if possible, walk through all 34 groups but this is not a strict constraint - 25 groups are more than enough in my opinion. 
-- RC: Watch at least the first six videos of [Greg's RC series](https://www.gregmat.com/course/dedicated-reading-season-3) along with at least three "Homework" solving sessions. Solve alongside. Keep doing official ETS questions side by side. 
-- TC amd SE: Understand how TC and SE works; maybe watch one video of Greg's or Vince's live classes to understand how they approach these problems. Otherwise, only vocab can help you here. Again, keep practicing questions from the official ETS books. 
+> “Insanity is doing the same thing over and over again and expecting different results.” — Albert Einstein
 
-![img](img/blogs/gre/congrats.png)
+That dictum pushed me to change the *process* instead of piling on more content. Concretely, my retake strategy was minimal and surgical:
 
-### Additional insights
+- **Primary focus on official material.** I centered my work on ETS official problems and the ETS Math Review. These materials mirror the test’s style and expose exactly the kinds of wording and traps ETS uses.
+- **Zero new strategy videos.** I stopped consuming new tactics and instead practiced the strategies I already knew until they became reflexive. Watching another “how to do RC” video would only re-introduce noise.
+- **Tight vocab maintenance.** Rather than expanding my word list, I cycled the difficult words I’d already seen until recall was effortless. Quality of recall beat quantity.
+- **Targeted Quant hygiene.** On Quant days I did timed sets and then performed a forensic review: recreate the thought process that led to each wrong answer, find the cognitive lapse (rushing, misread, bad diagram), and practice the exact micro-skill to prevent recurrence.
 
-- Luck is a major factor in these exams. Be calm if you don't get a good score in your first attempt. Statistics dictate that you will score well in your second. 
-- Give regular practice tests to ascertain your progress. There are a ton of free tests available online - use them. Save the official ETS PowerPrep tests (and if economically possible, the PowerPrepPlus tests) for the end since they are closest to the actual GRE.  
+Psychologically this felt counterintuitive: I was intentionally *not* overpreparing. Practically it paid off: on the retake I finished the second Quant section with around ten minutes to spare and was able to cross-check answers; the test felt cleaner and less frantic. The result: 170Q / 162V - 332 total.
 
-## More Resources
+![Test day drama — second attempt](img/blogs/gre/test_day.png)
 
-- [Quant Flashcards by GregMat (truly the GOAT)](https://www.gregmat.com/course-group/quant-flashcards)
-- [Quant Cheatsheet prepared by yours truly](https://gre-quant-tips-tricks.tiiny.site)
-- [TargetTestPrep's Quant Cheatsheet](https://drive.google.com/file/d/1Fg_hNHQMN-RkYWOVqq1bIb7hjnW1BJkO/view)
-- [Vocab "Difficult Words" Google Sheet made by me](https://docs.google.com/spreadsheets/d/1KEOBOUiUOyTtpg_aXdQV-ZOhC9XqVilLZVEQ5e0n4OY/edit?usp=sharing)
-- [AWA Template](https://drive.google.com/file/d/1HgpntC54JawZYyl5ByNInLC8IVsPth25/view?usp=sharing) 
+---
+
+## 5. Recommended materials & a practical routine
+
+There’s plenty of GRE material online. My recommendation: **pick one high-quality resource + ETS official materials**, and stick to it.
+
+**What I used / recommend**
+
+- **Core:** ETS GRE Math Review + official GRE practice books.
+- **Course:** GregMat for vocab, RC strategy, and structured practice (don’t slavishly follow every schedule).
+- **Extras:** PrepSwift / Khan Academy only if you need conceptual refreshers.
+
+**Weekly cadence that worked**
+
+- 3 days Verbal (vocab + RC practice)
+- 1 day Quant (timed sets + error diagnosis)
+- Every 7–10 days: full-length mock under exam conditions
+- Final week: reserve ETS PowerPrep (and PowerPrepPlus if possible) as your primary sims
+
+![Retake success](img/blogs/gre/success.png)
+
+---
+
+## 6. Practical tips & common traps
+
+- **Consistency > intensity.** Regular, daily work beats sporadic marathon sessions.
+- **Diagnose every mistake.** For Quant, treat each “silly” error as a bug to be fixed.
+- **Classify RC questions.** Learn a repeatable approach and practice it on ETS passages.
+- **Use official ETS tests last.** They are the closest to the actual test interface and timing.
+- **Retakes are normal.** Analyze, adapt, and retake when necessary.
+
+![Congrats — you survived](img/blogs/gre/congrats.png)
+
+---
+
+## 7. Quick-resource list
+
+- [GregMat](https://www.gregmat.com) - vocab, RC series, practice sets
+- [GRE Math Review (ETS PDF)](https://www.ets.org/pdfs/gre/gre-math-review.pdf)
+- [My Quant Cheatsheet](https://gre-quant-tips-tricks.tiiny.site)
+- [TargetTestPrep Quant Cheatsheet](https://drive.google.com/file/d/1Fg_hNHQMN-RkYWOVqq1bIb7hjnW1BJkO/view)
+- [My “Difficult Words” vocab Google Sheet](https://docs.google.com/spreadsheets/d/1KEOBOUiUOyTtpg_aXdQV-ZOhC9XqVilLZVEQ5e0n4OY/edit?usp=sharing)
+- [AWA Template](https://drive.google.com/file/d/1HgpntC54JawZYyl5ByNInLC8IVsPth25/view?usp=sharing)
+
+---
+
+## Final takeaways (TL;DR)
+
+1. Don’t silo Quant and Verbal - practice their interplay.
+2. Fix behavioral errors (timing, careless mistakes) instead of accumulating more content.
+3. Adopt a single, solid study resource plus ETS official materials.
+4. Make RC practice deliberate and repeatable.
+5. Retakes are often just part of the process - analyze, adapt, and try again.
 
 ---
 
 _Have questions or thoughts on this topic? Feel free to reach out via the [contact page](/contact.html)!_
-
----
-
-<!-- **Related Posts:** [If you have related content, link to it here] -->
