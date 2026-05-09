@@ -1,10 +1,9 @@
 (function () {
   const typedTextElement = document.getElementById("typed-text");
   const typingPhrases = [
-    "AI Researcher",
-    "ML Developer",
-    "Tech Explorer",
-    "Problem Solver",
+    "AI/MLE Intern Candidate",
+    "Incoming NYU MSCS",
+    "Agentic AI Developer",
     "Barcelona Fan",
   ];
 
@@ -19,13 +18,13 @@
       if (isDeleting) {
         typedTextElement.textContent = currentPhrase.substring(
           0,
-          charIndex - 1
+          charIndex - 1,
         );
         charIndex -= 1;
       } else {
         typedTextElement.textContent = currentPhrase.substring(
           0,
-          charIndex + 1
+          charIndex + 1,
         );
         charIndex += 1;
       }
@@ -199,7 +198,7 @@
   filterBlogCards();
 
   const blogInternalLinks = document.querySelectorAll(
-    ".blog-card-link, .blog-hero-link, .featured-post .btn"
+    ".blog-card-link, .blog-hero-link, .featured-post .btn",
   );
 
   blogInternalLinks.forEach((link) => {
