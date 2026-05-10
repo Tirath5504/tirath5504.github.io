@@ -20,7 +20,7 @@ function capitalize(s: string) {
 }
 
 export async function generateStaticParams() {
-  const filePath = path.join(process.cwd(), "public", "blogs-config.json");
+  const filePath = path.join(/* turbopackIgnore: true */ process.cwd(), "public", "blogs-config.json");
   const fileContents = await fs.readFile(filePath, "utf8");
   const data = JSON.parse(fileContents);
 
@@ -35,7 +35,7 @@ export default async function BlogArticle({
   params: Promise<{ id: string }>;
 }) {
   const resolvedParams = await params;
-  const filePath = path.join(process.cwd(), "public", "blogs-config.json");
+  const filePath = path.join(/* turbopackIgnore: true */ process.cwd(), "public", "blogs-config.json");
   const fileContents = await fs.readFile(filePath, "utf8");
   const data = JSON.parse(fileContents);
 
@@ -59,7 +59,7 @@ export default async function BlogArticle({
   }
 
   // Load the markdown file
-  const mdFilePath = path.join(process.cwd(), blog.file);
+  const mdFilePath = path.join(/* turbopackIgnore: true */ process.cwd(), blog.file);
   let htmlContent = "";
   try {
     const mdContents = await fs.readFile(mdFilePath, "utf8");

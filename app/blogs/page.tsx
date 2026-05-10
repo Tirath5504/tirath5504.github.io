@@ -3,7 +3,7 @@ import path from "path";
 import BlogListClient from "@/components/BlogListClient";
 
 export default async function BlogsPage() {
-  const filePath = path.join(process.cwd(), "public", "blogs-config.json");
+  const filePath = path.join(/* turbopackIgnore: true */ process.cwd(), "public", "blogs-config.json");
   const fileContents = await fs.readFile(filePath, "utf8");
   const data = JSON.parse(fileContents);
   const blogs = data.blogs;
