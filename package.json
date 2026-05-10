@@ -1,0 +1,37 @@
+{
+  "name": "tirath5504.github.io",
+  "version": "1.0.0",
+  "description": "**Description:**",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tirath5504/tirath5504.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tirath5504/tirath5504.github.io/issues"
+  },
+  "homepage": "https://github.com/Tirath5504/tirath5504.github.io#readme",
+  "dependencies": {
+    "marked": "^18.0.3",
+    "next": "^16.2.6",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "@types/react": "^19.2.14",
+    "typescript": "^6.0.3"
+  }
+}

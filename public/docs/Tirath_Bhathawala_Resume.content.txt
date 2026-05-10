@@ -1,0 +1,71 @@
+•
+National AI Examination (GATE DS&AI): Achieved All India Rank 499 (Top 0.8%) out of 60,000+ candidates.
+•
+Rajasthan Police Hackathon 2024:  Top 100 out of 1000+ teams (ML Lead).
+•
+CodeBounty 2024:  1st Place Winner in a college competitive programming contest out of 100+ registrations.
+•
+Amazon ML Challenge 2024:  Secured Rank 292 out of 70,000+ participating teams nationwide.
+Achievements
+Relevant Coursework:  AI, ML, DL, NLP, Data Structures & Algorithms, Data Warehousing & Mining, Advanced DBMS.
+Tools/Cloud:  Linux, Git, Docker, Azure AI, FastAPI.
+AI/ML Frameworks:  PyTorch, TensorFlow, HuggingFace, OpenCV, scikit-learn, Transformers, Keras.
+Languages:  Python, C/C++, Java, Rust, SQL, JavaScript, HTML/CSS.
+Technical Skills
+processing pipeline with STT-TTS, merging all modalities into a comprehensive video processing architecture.
+•
+Fine-tuned DistilRoBERTa for text analysis, implemented OCR for image extraction, and constructed an audio
+orchestration across four LLMs (DeepSeek R1, GPT-4o, Gemini 2.0, LLaMA 4.0).
+•
+Engineered an AI Agent integrating modality-specific models, enabling unified hate speech detection through interactive
+DigniFy: Multi-Modal Multilingual Hate Speech Detection| HuggingFace, TensorFlow, FastAPI        May 2025
+empirical coverage and a 96.4% detection rate across external test sets like FracAtlas and MURA.
+•
+Implemented conformal prediction to generate statistically grounded differential diagnoses, achieving 92.0%
+RAD-DINO, YOLO, DenseNet) with specialized LLM agents and delivers verifiable, RAG-grounded reasoning.
+•
+Engineered a multi-agent clinical decision support system that integrates a 4-model vision ensemble (MaxViT,
+FRAC-MAS: Conformal Multi-Agent Fracture Radiograph Analysis| Grad-CAM, PyTorch         March 2026
+•
+Achieved a 72.50% human preference rate during blind A/B patch evaluations conducted by professional developers.
+•
+Evaluated on real-world production bugs, successfully fixing 46.38% of issues (3.5x better than GPT-4o baseline).
+stack traces and DOM screenshots, for automated root-cause diagnosis, hypothesis validation, and patch synthesis.
+•
+Architected a 12-agent LangGraph pipeline that ingests comprehensive multimodal telemetry, including resolved
+AntiBug: Runtime-Aware Multimodal Agentic Program Repair| LangGraph, Next.js, TypeScript      April 2026
+Projects & Publications
+•
+Optimized chunking strategies and top-p sampling parameters, reducing document retrieval perplexity by 15%.
+•
+Devised Retrieval-Augmented Generation (RAG) workflows in Azure AI PromptFlow across 50+ RFPs.
+AI Intern                                                                               Remote, Helsinki, Finland
+Nvelop Technologies Oy                                                       Aug 2024 – Feb 2025
+(Llama 3.1, Mixtral, Gemini 2.0, GPT-4o), achieving high inter-annotator agreement (Cohen’s Kappa = 0.834).
+•
+Developed a novel LLM-argumentation system for peer review, evaluating 900+ ICLR reviews using leading LLMs
+combining disagreement detection and fact-grounded synthesis to automate meta-review decision-making.
+•
+Designed MetaSearch, a search-augmented, reasoning-based AI Agent for consensus resolution in peer review,
+Research Intern                                                                             Remote, Patna, India
+Indian Institute of Technology, Patna                                          Oct 2024 – May 2025
+commercial (ElevenLabs) stacks to enable accurate speaker labeling and downstream analytics.
+•
+Built legally-compliant speaker-diarization pipelines for sales–customer calls using open-source (SpeechBrain) and
+detectors for Xiaomi (0.87 mAP@50 across over 500 stores in India).
+•
+Evaluated and productionized computer-vision pipelines for retail supermarkets, fine-tuning YOLOv11 multi-class
+supervisor workflows, detect anomalies, and dynamically incorporate worker-input special conditions.
+•
+Developed an AI-agentic system powered by dynamic graphs and real-time factory operation databases to support
+AI Intern                                                                                 Hybrid, Mumbai, India
+BrandContext.ai                                                        Mar 2025 – Aug 2025
+Experience
+B.Tech in Computer Engineering with Honors in Intelligent Computing (CGPA: 9.28)                      Mumbai, India
+SVKM’s Dwarkadas J. Sanghvi College of Engineering                          Nov 2022 – Jun 2026
+Master of Science in Computer Science                                                              New York, NY
+New York University, Courant Institute of Mathematical Sciences              Aug 2026 – May 2028
+Education
++91-9137583387    #tirath.bhathawala@gmail.com   ïin/tirath-bhathawala   §github.com/Tirath5504   Ðtirath.me
+Tirath Bhathawala
+----------------Page (0) Break----------------

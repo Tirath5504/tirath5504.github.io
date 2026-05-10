@@ -1,0 +1,148 @@
+﻿Tirath Bhathawala
+ +91-9137583387 # tirath.bhathawala@gmail.com ï in/tirath-bhathawala § github.com/Tirath5504 Ð tirath.me
+
+EDUCATION
+
+SVKM’s Dwarkadas J. Sanghvi College of Engineering Mumbai, India
+B.Tech in Computer Engineering with Honors in Intelligent Computing (CGPA: 9.28) Nov 2022 – Jun 2026
+
+Mumbai Junior College of Arts, Commerce and Science Mumbai, India
+HSC Science with CS (12th: 91.5%, MHTCET rank of 719 among 200,000+ candidates) Jun 2019 – Jun 2021
+
+RESEARCH PUBLICATIONS
+
+Dynamic Optimization of Peer Review Length Using Information Density Analysis Published
+Scientometrics (Springer) — Paper — Code — Demo September 2025
+
+AntiBug: Runtime-Aware Multimodal Agentic Program Repair for Production ApplicationsUnder Review
+Automated Software Engineering (Special Issue) April 2026
+
+FRAC-MAS: Fracture Radiograph Analysis using Conformal Multi-Agent System Under Review
+Biomedical Signal Processing and Control (Special Issue) — Website — Code — Demo March 2026
+
+BiasChain: A Multi-Agent LLM Framework for Justified Peer Review Bias Detection Under Review
+Journal of Information Science (Sage Publications) October 2025
+
+DigniFy: Multi-Modal Multilingual Online Hate Speech Detection Under Review
+IEEE CONECCT — Code — Demo May 2025
+
+Evaluating Large Language Models for Automated Requirement Generation in IT Projects Whitepaper
+LinkedIn January 2025
+
+EXPERIENCE
+
+BrandContext.ai Mar 2025 - Aug 2025
+AI Intern Hybrid, Mumbai, India
+
+– Finetuning an LLM-driven automation framework (browser-use) that independently performs user-specified queries on
+websites (Looker Studio, Hootsuite, etc) or Google Sheets by generating and executing custom Playwright-based actions.
+
+– Developing an AI-agentic system powered by dynamic graphs and real-time factory operation databases to support
+supervisor workflows, detect anomalies, and dynamically incorporate worker-input special conditions.
+
+– Evaluated and productionized computer-vision pipelines for retail supermarkets (queue, theft, etc) and fine-tuned YOLOv11
+multi-class detectors (logo, furniture, mobile, security) for Xiaomi (0.87 mAP@50 across over 500 stores in India).
+
+– Built legally-compliant speaker-diarization pipelines for sales–customer calls using open-source (SpeechBrain) and commercial
+(ElevenLabs) stacks to enable accurate speaker labeling and downstream analytics.
+
+Indian Institute of Technology, Patna Oct 2024 - May 2025
+Research Intern Remote, Patna, India
+
+– Composed a heuristic framework, based on Cognitive Load and Discourse Analysis theories, for optimizing peer review
+lengths through information density analysis, integrating metrics for content relevance and argument strength (published).
+
+– Designed MetaSearch, a search-augmented, reasoning-based AI Agent for consensus resolution in peer review,
+combining disagreement detection and fact-grounded synthesis to automate and enhance meta-review decision-making.
+
+– Developed a novel LLM-argumentation system for peer review, evaluating 900+ ICLR reviews (PeerRead Dataset) using leading
+LLMs (Llama 3.1, Mixtral, Gemini2, GPT-4o), achieving high inter-annotator agreement (Cohen’s Kappa = 0.834).
+
+– Engineered BiasChain, a modular multi-agent LLM framework for justified peer review bias detection, by orchestrating
+specialized agents for sentiment coherence, internal consistency, and inter-review alignment.
+
+Nvelop Technologies Oy Aug 2024 - Feb 2025
+AI Intern Remote, Helsinki, Finland
+
+– Authored a whitepaper implementing an evaluation pipeline for LLM-based requirement generation, benchmarkingDeepSeek
+R1, GPT-4o, Gemini 2.0, LLaMA 3.2 across diverse NLP metrics including BLEU, Levenshtein and Jaccard Similarity.
+
+– Devised automated workflows in Azure AI Promptflow for Retrieval Augmented Generation (RAG) tasks, for 50+ RFPs.
+
+– Optimized chunking strategies and top-p sampling parameters, reducing document retrieval perplexity by 15%.
+
+1
+
+
+
+– Authored a comprehensive 70-page documentation detailing the mapping of AI APIs (Insomnia) to the frontend (NextJS).
+
+UIUC+ Summer Research Program Jun 2024 - Jul 2024
+Research Assistant Remote, Urbana-Champaign, USA
+
+– Investigated challenges in C to Rust transpilation, summarizing findings from 5+ research papers (VERT, Lost in Trans-
+lation, etc.) and evaluating the results of existing transpilers and CodeLLMs.
+
+– Analyzed LLM-generated C and Rust code, identifying and categorizing bugs, improving code quality evaluation frameworks.
+
+PavePilot AI Jun 2024 - Jul 2024
+Python (LLM) Development Intern Remote, USA
+
+– Established an AI-driven marketing content pipeline by evaluating multiple image models (BRIA, Stable Diffusion, Midjour-
+ney) and implementing image processing techniques with OpenCV.
+
+– Created platform-specific content (LinkedIn, Instagram, Twitter), designing customized AI-generated prompts and style
+guides for brand-aligned product advertisements using GenAI tools.
+
+EXTRA CO-CURRICULAR
+
+DJSCE ACM | Research Head
+
+– Established personalized research mentoring program for 15+ students, successfully placing 5 mentees in competitive
+research internships through targeted guidance in domain-specific learning and academic paper writing.
+
+– Designed tasks in python, research methodology, and technical writing to enhance mentees’ skills in structured research.
+
+PROJECTS
+
+FRAC-MAS | Grad− CAM,PyTorch
+
+– FRAC-MAS proposes a conformal multi-agent fracture radiograph pipeline for Clinical Workflow Integration, Interactive
+and Trustworthy Systems over Multimodal Clinical Data, with Clinical Evaluation Protocols toward Regulatory Readiness.
+
+GRASP | LangGraph, LangSmith, Next.js, TypeScript
+
+– GRASP is a graph-based runtime-aware automated software patching framework which captures enriched runtime context
+(source-map-resolved stack traces, automatic screenshots) and orchestrates specialized agents to generate patch suggestions.
+
+– Implemented SDK and agents pipeline for related errors capture, hypothesis-driven repair, and automated validation.
+
+DigniFy | HuggingFace, Tensorflow,Render, FastAPI
+
+– DigniFy is an AI-powered mobile application for multimodal, multilingual hate speech detection.
+
+– Fine-tuned DistilRoBERTa for English and Hinglish text, implemented OCR-based text extraction for images, designed an
+audio processing pipeline with STT-TTS, and integrated all modalities into a unified video processing pipeline.
+
+– Engineered an AI Agent integrating all modality-specific models as tools, enabling detection through interaction with four LLMs
+(DeepSeek R1, GPT-4o, Gemini 2.0, LLaMA 4.0), and conducted comparative evaluation across model outputs.
+
+TECHNICAL SKILLS
+
+Relevant Coursework: AI, ML, DL, Data Structures & Algorithms, Data Warehousing & Mining, Advanced DBMS, OS
+Programming Languages: Python, C, C++, Java, HTML/CSS, JavaScript, SQL, React, Rust, LATEX
+Tools: Linux, Git, Kaggle, Google Colab, Docker, Azure AI, Overleaf
+Frameworks/Technologies: Tensorflow, Keras, PyTorch, OpenCV, Transformers, NLTK, FastAPI, HuggingFace, scikit-learn
+Course Certifications: CS50P by Harvard University (Online), The Odin Project
+Coding Profiles: CodeChef LeetCode HackerRank
+
+ACHIEVEMENTS
+
+All India Rank 499 in GATE DA (Data Science and Artificial Intelligence) examination from over 60,000 students
+Winner in CodeBounty 2024, a college competitive programming contest with 100+ registrations
+Top 100 in the Rajasthan Police Hackathon 2024 (ML Lead) out of 1000+ teams
+Top 200 in the Gujarat G20 Summit Hackathon 2023 (ML Lead) out of 2500+ teams
+Rank 292 out of 70,000+ registrations in the Amazon ML Challenge 2024
+Selected as a mentee in the sktime mentoring program under Dr. Franz Kiraly
+
+2
