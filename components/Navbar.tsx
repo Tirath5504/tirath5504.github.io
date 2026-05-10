@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 export default function Navbar() {
   const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -20,17 +21,35 @@ export default function Navbar() {
     return pathname.startsWith(path);
   };
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav>
       <div className="nav-container">
-        <Link className="nav-logo" href="/">
+        <Link className="nav-logo" href="/" onClick={closeMobileMenu}>
           Tirath.
         </Link>
-        <ul className="nav-menu">
+        
+        <button 
+          className={`mobile-menu-toggle ${isMobileMenuOpen ? "active" : ""}`}
+          onClick={toggleMobileMenu}
+          aria-label="Toggle mobile menu"
+        >
+          <i className={isMobileMenuOpen ? "uil uil-times" : "uil uil-bars"}></i>
+        </button>
+
+        <ul className={`nav-menu ${isMobileMenuOpen ? "mobile-active" : ""}`}>
           <li>
             <Link
               href="/"
               className={`nav-link ${isActive("/") ? "active" : ""}`}
+              onClick={closeMobileMenu}
             >
               Home
             </Link>
@@ -39,6 +58,7 @@ export default function Navbar() {
             <Link
               href="/about"
               className={`nav-link ${isActive("/about") ? "active" : ""}`}
+              onClick={closeMobileMenu}
             >
               About
             </Link>
@@ -47,6 +67,7 @@ export default function Navbar() {
             <Link
               href="/experience"
               className={`nav-link ${isActive("/experience") ? "active" : ""}`}
+              onClick={closeMobileMenu}
             >
               Experience
             </Link>
@@ -55,6 +76,7 @@ export default function Navbar() {
             <Link
               href="/projects"
               className={`nav-link ${isActive("/projects") ? "active" : ""}`}
+              onClick={closeMobileMenu}
             >
               Projects
             </Link>
@@ -63,6 +85,7 @@ export default function Navbar() {
             <Link
               href="/research"
               className={`nav-link ${isActive("/research") ? "active" : ""}`}
+              onClick={closeMobileMenu}
             >
               Research
             </Link>
@@ -71,6 +94,7 @@ export default function Navbar() {
             <Link
               href="/blogs"
               className={`nav-link ${isActive("/blogs") ? "active" : ""}`}
+              onClick={closeMobileMenu}
             >
               Blogs
             </Link>
@@ -79,6 +103,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               className={`nav-link ${isActive("/contact") ? "active" : ""}`}
+              onClick={closeMobileMenu}
             >
               Contact
             </Link>
