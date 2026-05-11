@@ -1,3 +1,5 @@
+import SpotlightCard from '@/components/SpotlightCard';
+
 export default function Research() {
   return (
     <main>
@@ -10,7 +12,7 @@ export default function Research() {
           </p>
 
           <div className="research-grid">
-            <div className="research-paper fade-in">
+            <SpotlightCard className="research-paper fade-in">
               <div className="paper-accepted">Published</div>
               <h2 className="paper-title">
                 Dynamic Optimization of Peer Review Length Using Information
@@ -22,9 +24,9 @@ export default function Research() {
                 relevance, argumentative strength, and cognitive load to
                 optimise peer-review length.
               </p>
-            </div>
+            </SpotlightCard>
 
-            <div className="research-paper fade-in">
+            <SpotlightCard className="research-paper fade-in">
               <div className="paper-status">Under Review</div>
               <h2 className="paper-title">
                 AntiBug: Runtime-Aware Multimodal Agentic Program Repair for
@@ -38,9 +40,9 @@ export default function Research() {
                 multimodal runtime telemetry (stack traces, screenshots) and
                 specialized agent orchestration for hypothesis-driven repair.
               </p>
-            </div>
+            </SpotlightCard>
 
-            <div className="research-paper fade-in">
+            <SpotlightCard className="research-paper fade-in">
               <div className="paper-status">Under Review</div>
               <h2 className="paper-title">
                 FRAC-MAS: Fracture Radiograph Analysis using Conformal
@@ -55,9 +57,9 @@ export default function Research() {
                 statistically grounded diagnoses for clinical workflow
                 integration.
               </p>
-            </div>
+            </SpotlightCard>
 
-            <div className="research-paper fade-in">
+            <SpotlightCard className="research-paper fade-in">
               <div className="paper-status">Under Review</div>
               <h2 className="paper-title">
                 BiasChain: A Multi-Agent LLM Framework for Justified Peer Review
@@ -71,9 +73,9 @@ export default function Research() {
                 specialized agents for sentiment coherence, internal
                 consistency, and inter-review alignment.
               </p>
-            </div>
+            </SpotlightCard>
 
-            <div className="research-paper fade-in">
+            <SpotlightCard className="research-paper fade-in">
               <div className="paper-status">Under Review</div>
               <h2 className="paper-title">
                 DigniFy: Multi-Modal Multilingual Online Hate Speech Detection
@@ -84,9 +86,9 @@ export default function Research() {
                 multimodal safety systems with interactive LLM orchestration to
                 detect online hate speech.
               </p>
-            </div>
+            </SpotlightCard>
 
-            <div className="research-paper fade-in">
+            <SpotlightCard className="research-paper fade-in">
               <div className="paper-status">Whitepaper</div>
               <h2 className="paper-title">
                 Evaluating Large Language Models for Automated Requirement
@@ -100,7 +102,7 @@ export default function Research() {
                 2.0, and LLaMA 3.2 on BLEU, Levenshtein, and Jaccard metrics for
                 requirement engineering.
               </p>
-            </div>
+            </SpotlightCard>
           </div>
         </div>
       </section>
@@ -109,7 +111,7 @@ export default function Research() {
         <div className="container">
           <h2 className="section-title">Achievements &amp; Recognition</h2>
           <div className="achievements-grid">
-            <div className="project-card fade-in">
+            <SpotlightCard className="project-card fade-in">
               <div className="project-icon">
                 <i className="uil uil-trophy"></i>
               </div>
@@ -118,9 +120,9 @@ export default function Research() {
                 Ranked 499 nationwide among 60,000+ candidates in GATE Data
                 Science &amp; AI, demonstrating strong theoretical foundations.
               </p>
-            </div>
+            </SpotlightCard>
 
-            <div className="project-card fade-in">
+            <SpotlightCard className="project-card fade-in">
               <div className="project-icon">
                 <i className="uil uil-award"></i>
               </div>
@@ -129,9 +131,9 @@ export default function Research() {
                 Placed 292 out of 70,000+ participants in Amazon ML Challenge
                 2024, showcasing applied machine-learning expertise.
               </p>
-            </div>
+            </SpotlightCard>
 
-            <div className="project-card fade-in">
+            <SpotlightCard className="project-card fade-in">
               <div className="project-icon">
                 <i className="uil uil-code-branch"></i>
               </div>
@@ -140,9 +142,9 @@ export default function Research() {
                 Won the flagship competitive programming contest at DJSCE,
                 highlighting algorithmic design strengths.
               </p>
-            </div>
+            </SpotlightCard>
 
-            <div className="project-card fade-in">
+            {/* <SpotlightCard className="project-card fade-in">
               <div className="project-icon">
                 <i className="uil uil-shield"></i>
               </div>
@@ -153,9 +155,9 @@ export default function Research() {
                 Led ML for the finalist solution tackling law-enforcement
                 challenges with data-driven citizen feedback analysis.
               </p>
-            </div>
+            </SpotlightCard>
 
-            <div className="project-card fade-in">
+            <SpotlightCard className="project-card fade-in">
               <div className="project-icon">
                 <i className="uil uil-users-alt"></i>
               </div>
@@ -164,7 +166,7 @@ export default function Research() {
                 Selected as a mentee under Dr. Franz Kiraly for the sktime
                 mentoring program focused on time-series ML research.
               </p>
-            </div>
+            </SpotlightCard> */}
           </div>
         </div>
       </section>

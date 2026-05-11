@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import ElectricBorder from "@/components/ElectricBorder";
+
 
 interface Blog {
   id: string;
@@ -71,6 +73,7 @@ export default function BlogListClient({ blogs, featuredBlog }: Props) {
               </Link>
             </div>
           </div>
+          <ElectricBorder borderRadius={30} color="var(--highlight)" style={{ marginBottom: "4rem" }}>
           <div className="blog-hero-card" id="featured-highlight">
             {featuredBlog && (
               <>
@@ -109,6 +112,7 @@ export default function BlogListClient({ blogs, featuredBlog }: Props) {
               </>
             )}
           </div>
+          </ElectricBorder>
         </div>
       </section>
 

@@ -1,3 +1,21 @@
+import LogoLoop from "@/components/LogoLoop";
+
+const techStackLogos = [
+  { node: <span style={{ padding: "0.5rem 1rem", fontSize: "1.5rem", fontWeight: 600, color: "var(--highlight)", background: "var(--glass-bg)", borderRadius: "12px", border: "1px solid var(--highlight)" }}>PyTorch</span> },
+  { node: <span style={{ padding: "0.5rem 1rem", fontSize: "1.5rem", fontWeight: 600, color: "var(--highlight)", background: "var(--glass-bg)", borderRadius: "12px", border: "1px solid var(--highlight)" }}>Hugging Face</span> },
+  { node: <span style={{ padding: "0.5rem 1rem", fontSize: "1.5rem", fontWeight: 600, color: "var(--highlight)", background: "var(--glass-bg)", borderRadius: "12px", border: "1px solid var(--highlight)" }}>PEFT / LoRA</span> },
+  { node: <span style={{ padding: "0.5rem 1rem", fontSize: "1.5rem", fontWeight: 600, color: "var(--highlight)", background: "var(--glass-bg)", borderRadius: "12px", border: "1px solid var(--highlight)" }}>LangChain</span> },
+  { node: <span style={{ padding: "0.5rem 1rem", fontSize: "1.5rem", fontWeight: 600, color: "var(--highlight)", background: "var(--glass-bg)", borderRadius: "12px", border: "1px solid var(--highlight)" }}>scikit-learn</span> },
+  { node: <span style={{ padding: "0.5rem 1rem", fontSize: "1.5rem", fontWeight: 600, color: "var(--highlight)", background: "var(--glass-bg)", borderRadius: "12px", border: "1px solid var(--highlight)" }}>OpenCV</span> },
+  { node: <span style={{ padding: "0.5rem 1rem", fontSize: "1.5rem", fontWeight: 600, color: "var(--highlight)", background: "var(--glass-bg)", borderRadius: "12px", border: "1px solid var(--highlight)" }}>FastAPI</span> },
+  { node: <span style={{ padding: "0.5rem 1rem", fontSize: "1.5rem", fontWeight: 600, color: "var(--highlight)", background: "var(--glass-bg)", borderRadius: "12px", border: "1px solid var(--highlight)" }}>Docker</span> },
+  { node: <span style={{ padding: "0.5rem 1rem", fontSize: "1.5rem", fontWeight: 600, color: "var(--highlight)", background: "var(--glass-bg)", borderRadius: "12px", border: "1px solid var(--highlight)" }}>Firebase</span> },
+  { node: <span style={{ padding: "0.5rem 1rem", fontSize: "1.5rem", fontWeight: 600, color: "var(--highlight)", background: "var(--glass-bg)", borderRadius: "12px", border: "1px solid var(--highlight)" }}>Weights & Biases</span> },
+  { node: <span style={{ padding: "0.5rem 1rem", fontSize: "1.5rem", fontWeight: 600, color: "var(--highlight)", background: "var(--glass-bg)", borderRadius: "12px", border: "1px solid var(--highlight)" }}>Git/GitHub</span> }
+];
+
+import ElectricBorder from "@/components/ElectricBorder";
+
 export default function About() {
   return (
     <main>
@@ -5,17 +23,19 @@ export default function About() {
         <div className="container">
           <h1 className="section-title">About Me</h1>
           
-          <div style={{ position: "relative", padding: "3rem", background: "var(--glass-bg)", borderRadius: "30px", border: "1px solid var(--highlight)", boxShadow: "0 10px 30px rgba(0, 212, 255, 0.1)", marginBottom: "4rem" }}>
-            <p className="section-description" style={{ fontSize: "1.25rem", color: "var(--primary-text)", maxWidth: "100%", textAlign: "left" }}>
-              Hi, I’m <strong style={{ color: "var(--highlight)" }}>Tirath</strong> — a final-year Computer Engineering student from Mumbai focused on AI systems, machine learning research, and building practical tools around LLMs and multimodal AI.
-            </p>
-            <p className="section-description" style={{ marginTop: "1.5rem", maxWidth: "100%", textAlign: "left" }}>
-              Most of my work sits at the intersection of research and engineering: from multilingual hate speech detection and peer-review transparency systems to code transpilation and agentic AI frameworks. I enjoy turning messy, ambiguous research ideas into systems that can actually be deployed, evaluated, and used by people.
-            </p>
-            <p className="section-description" style={{ marginTop: "1.5rem", maxWidth: "100%", textAlign: "left", marginBottom: 0 }}>
-              Outside of academics, I’m someone who genuinely enjoys deep technical rabbit holes, mentoring students, exploring cities through food, and having long conversations about technology, academia, and where AI is headed next.
-            </p>
-          </div>
+          <ElectricBorder borderRadius={30} color="var(--highlight)" style={{ marginBottom: "4rem" }}>
+            <div style={{ position: "relative", padding: "3rem", background: "var(--glass-bg)", borderRadius: "30px", border: "1px solid var(--highlight)", boxShadow: "0 10px 30px rgba(0, 212, 255, 0.1)" }}>
+              <p className="section-description" style={{ fontSize: "1.25rem", color: "var(--primary-text)", maxWidth: "100%", textAlign: "left" }}>
+                Hi, I’m <strong style={{ color: "var(--highlight)" }}>Tirath</strong> — a final-year Computer Engineering student from Mumbai focused on AI systems, machine learning research, and building practical tools around LLMs and multimodal AI.
+              </p>
+              <p className="section-description" style={{ marginTop: "1.5rem", maxWidth: "100%", textAlign: "left" }}>
+                Most of my work sits at the intersection of research and engineering: from multilingual hate speech detection and peer-review transparency systems to code transpilation and agentic AI frameworks. I enjoy turning messy, ambiguous research ideas into systems that can actually be deployed, evaluated, and used by people.
+              </p>
+              <p className="section-description" style={{ marginTop: "1.5rem", maxWidth: "100%", textAlign: "left", marginBottom: 0 }}>
+                Outside of academics, I’m someone who genuinely enjoys deep technical rabbit holes, mentoring students, exploring cities through food, and having long conversations about technology, academia, and where AI is headed next.
+              </p>
+            </div>
+          </ElectricBorder>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "3rem", marginTop: "4rem" }}>
             <div>
@@ -45,41 +65,7 @@ export default function About() {
             </div>
           </div>
 
-          <h2 className="section-title" style={{ marginTop: "6rem", fontSize: "2.5rem" }}>Tech Stack I’m Loving</h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "2rem", flexWrap: "wrap", padding: "1.5rem 2rem", background: "linear-gradient(90deg, var(--glass-bg) 0%, transparent 100%)", borderRadius: "20px", borderLeft: "4px solid var(--highlight)" }}>
-              <h3 style={{ width: "200px", fontSize: "1.3rem", color: "var(--primary-text)", margin: 0 }}>
-                <i className="uil uil-brain" style={{ color: "var(--highlight)", marginRight: "0.5rem" }}></i> AI / ML
-              </h3>
-              <div className="skill-tags" style={{ flex: 1 }}>
-                {["PyTorch", "Hugging Face", "PEFT / LoRA", "LangChain", "scikit-learn", "OpenCV", "Whisper"].map(tag => (
-                  <span key={tag} className="skill-tag" style={{ background: "transparent", border: "1px solid var(--highlight)", color: "var(--highlight)" }}>{tag}</span>
-                ))}
-              </div>
-            </div>
 
-            <div style={{ display: "flex", alignItems: "center", gap: "2rem", flexWrap: "wrap", padding: "1.5rem 2rem", background: "linear-gradient(90deg, var(--glass-bg) 0%, transparent 100%)", borderRadius: "20px", borderLeft: "4px solid var(--highlight)" }}>
-              <h3 style={{ width: "200px", fontSize: "1.3rem", color: "var(--primary-text)", margin: 0 }}>
-                <i className="uil uil-server" style={{ color: "var(--highlight)", marginRight: "0.5rem" }}></i> Backend
-              </h3>
-              <div className="skill-tags" style={{ flex: 1 }}>
-                {["FastAPI", "Render", "Docker", "Firebase", "REST APIs", "HF Spaces"].map(tag => (
-                  <span key={tag} className="skill-tag" style={{ background: "transparent", border: "1px solid var(--highlight)", color: "var(--highlight)" }}>{tag}</span>
-                ))}
-              </div>
-            </div>
-
-            <div style={{ display: "flex", alignItems: "center", gap: "2rem", flexWrap: "wrap", padding: "1.5rem 2rem", background: "linear-gradient(90deg, var(--glass-bg) 0%, transparent 100%)", borderRadius: "20px", borderLeft: "4px solid var(--highlight)" }}>
-              <h3 style={{ width: "200px", fontSize: "1.3rem", color: "var(--primary-text)", margin: 0 }}>
-                <i className="uil uil-flask" style={{ color: "var(--highlight)", marginRight: "0.5rem" }}></i> Tooling
-              </h3>
-              <div className="skill-tags" style={{ flex: 1 }}>
-                {["LaTeX", "Zotero", "Weights & Biases", "Jupyter", "Git/GitHub"].map(tag => (
-                  <span key={tag} className="skill-tag" style={{ background: "transparent", border: "1px solid var(--highlight)", color: "var(--highlight)" }}>{tag}</span>
-                ))}
-              </div>
-            </div>
-          </div>
 
           <h2 className="section-title" style={{ marginTop: "6rem", fontSize: "2.5rem" }}>Beyond Work</h2>
           <div className="timeline" style={{ marginTop: "3rem" }}>
@@ -110,6 +96,7 @@ export default function About() {
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "4rem", marginTop: "6rem", alignItems: "center" }}>
+            <ElectricBorder borderRadius={30} color="var(--highlight)" style={{ marginBottom: "4rem" }}>
             <div style={{ padding: "3rem", background: "var(--secondary-bg)", borderRadius: "30px", position: "relative", overflow: "hidden" }}>
               <div style={{ position: "absolute", top: "-50px", right: "-50px", width: "150px", height: "150px", background: "var(--highlight)", opacity: "0.1", borderRadius: "50%", filter: "blur(40px)" }}></div>
               <h2 style={{ fontSize: "2rem", color: "var(--primary-text)", marginBottom: "2rem" }}>
@@ -130,6 +117,7 @@ export default function About() {
                 ))}
               </ul>
             </div>
+            </ElectricBorder>
 
             <div>
               <h2 style={{ fontSize: "3rem", color: "var(--primary-text)", marginBottom: "1.5rem", background: "var(--gradient-secondary)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>What Drives Me</h2>
@@ -139,6 +127,14 @@ export default function About() {
               <p style={{ fontSize: "1.2rem", color: "var(--highlight)", lineHeight: "1.8", fontStyle: "italic", borderLeft: "4px solid var(--highlight)", paddingLeft: "1rem" }}>
                 "I’m especially drawn toward problems where engineering, research, and human judgment intersect."
               </p>
+            </div>
+          </div>
+
+          <div style={{ marginTop: "8rem", marginBottom: "2rem", width: "100%", overflow: "hidden" }}>
+            <h2 className="section-title" style={{ fontSize: "2.5rem", textAlign: "center", marginBottom: "3rem" }}>Tech Stack I’m Loving</h2>
+            <LogoLoop logos={techStackLogos} speed={50} direction="left" />
+            <div style={{ marginTop: "2rem" }}>
+              <LogoLoop logos={techStackLogos.slice().reverse()} speed={50} direction="right" />
             </div>
           </div>
 

@@ -1,3 +1,6 @@
+import SpotlightCard from '@/components/SpotlightCard';
+import Magnet from '@/components/Magnet';
+
 export default function Projects() {
   return (
     <main>
@@ -11,7 +14,7 @@ export default function Projects() {
           </p>
 
           <div className="projects-grid">
-            <div className="project-card fade-in">
+            <SpotlightCard className="project-card fade-in">
               <div className="project-icon">
                 <i className="uil uil-bug"></i>
               </div>
@@ -32,26 +35,30 @@ export default function Projects() {
                 <span className="tech-tag">TypeScript</span>
               </div>
               <div className="project-links">
-                <a
-                  href="https://antibug-survey.vercel.app/benchmark"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  Benchmark Results Website
-                </a>
-                <a
-                  href="https://github.com/anon-research-submission/AntiBug"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  GitHub
-                </a>
+                <Magnet padding={50} magnetStrength={3}>
+                  <a
+                    href="https://antibug-survey.vercel.app/benchmark"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    Benchmark Results Website
+                  </a>
+                </Magnet>
+                <Magnet padding={50} magnetStrength={3}>
+                  <a
+                    href="https://github.com/anon-research-submission/AntiBug"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    GitHub
+                  </a>
+                </Magnet>
               </div>
-            </div>
+            </SpotlightCard>
 
-            <div className="project-card fade-in">
+            <SpotlightCard className="project-card fade-in">
               <div className="project-icon">
                 <i className="uil uil-medkit"></i>
               </div>
@@ -71,26 +78,30 @@ export default function Projects() {
                 <span className="tech-tag">Computer Vision</span>
               </div>
               <div className="project-links">
-                <a
-                  href="https://cvpr-submission-frac-mas.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  Live Demo
-                </a>
-                <a
-                  href="https://github.com/anonymous-submission-research/CVPR-Submission-2026-FRAC-MAS"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  GitHub
-                </a>
+                <Magnet padding={50} magnetStrength={3}>
+                  <a
+                    href="https://cvpr-submission-frac-mas.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    Live Demo
+                  </a>
+                </Magnet>
+                <Magnet padding={50} magnetStrength={3}>
+                  <a
+                    href="https://github.com/anonymous-submission-research/CVPR-Submission-2026-FRAC-MAS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    GitHub
+                  </a>
+                </Magnet>
               </div>
-            </div>
+            </SpotlightCard>
 
-            <div className="project-card fade-in">
+            <SpotlightCard className="project-card fade-in">
               <div className="project-icon">
                 <i className="uil uil-shield-check"></i>
               </div>
@@ -110,18 +121,20 @@ export default function Projects() {
                 <span className="tech-tag">Render</span>
               </div>
               <div className="project-links">
-                <a
-                  href="https://github.com/IPD-Hate-Speech-Detection/IPD-Hate-Speech-Detection"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  GitHub
-                </a>
+                <Magnet padding={50} magnetStrength={3}>
+                  <a
+                    href="https://github.com/IPD-Hate-Speech-Detection/IPD-Hate-Speech-Detection"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    GitHub
+                  </a>
+                </Magnet>
               </div>
-            </div>
+            </SpotlightCard>
 
-            <div className="project-card fade-in">
+            <SpotlightCard className="project-card fade-in">
               <div className="project-icon">
                 <i className="uil uil-search"></i>
               </div>
@@ -140,26 +153,30 @@ export default function Projects() {
                 <span className="tech-tag">RAG</span>
               </div>
               <div className="project-links">
-                <a
-                  href="https://meta-search-demo.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  Live Demo
-                </a>
-                <a
-                  href="https://github.com/Tirath5504/IITP_SRDA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  GitHub
-                </a>
+                <Magnet padding={50} magnetStrength={3}>
+                  <a
+                    href="https://meta-search-demo.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    Live Demo
+                  </a>
+                </Magnet>
+                <Magnet padding={50} magnetStrength={3}>
+                  <a
+                    href="https://github.com/Tirath5504/IITP_SRDA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    GitHub
+                  </a>
+                </Magnet>
               </div>
-            </div>
+            </SpotlightCard>
 
-            <div className="project-card fade-in">
+            <SpotlightCard className="project-card fade-in">
               <div className="project-icon">
                 <i className="uil uil-balance-scale"></i>
               </div>
@@ -178,18 +195,20 @@ export default function Projects() {
                 <span className="tech-tag">Argumentation Theory</span>
               </div>
               <div className="project-links">
-                <a
-                  href="https://github.com/Tirath5504/IIT_Patna_ScorePR"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  GitHub
-                </a>
+                <Magnet padding={50} magnetStrength={3}>
+                  <a
+                    href="https://github.com/Tirath5504/IIT_Patna_ScorePR"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    GitHub
+                  </a>
+                </Magnet>
               </div>
-            </div>
+            </SpotlightCard>
 
-            <div className="project-card fade-in">
+            <SpotlightCard className="project-card fade-in">
               <div className="project-icon">
                 <i className="uil uil-feedback"></i>
               </div>
@@ -208,24 +227,28 @@ export default function Projects() {
                 <span className="tech-tag">GeoSpatial</span>
               </div>
               <div className="project-links">
-                <a
-                  href="https://rakshakrita0.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  Live Demo
-                </a>
-                <a
-                  href="https://github.com/Tirath5504/RJPOLICE_HACK_177_DjDawgs_1/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  GitHub
-                </a>
+                <Magnet padding={50} magnetStrength={3}>
+                  <a
+                    href="https://rakshakrita0.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    Live Demo
+                  </a>
+                </Magnet>
+                <Magnet padding={50} magnetStrength={3}>
+                  <a
+                    href="https://github.com/Tirath5504/RJPOLICE_HACK_177_DjDawgs_1/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    GitHub
+                  </a>
+                </Magnet>
               </div>
-            </div>
+            </SpotlightCard>
           </div>
         </div>
       </section>

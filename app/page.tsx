@@ -1,5 +1,7 @@
 import Link from "next/link";
 import TypewriterEffect from "@/components/TypewriterEffect";
+import CountUp from "@/components/CountUp";
+import ProfileCard from "@/components/ProfileCard";
 
 export default function Home() {
   return (
@@ -81,10 +83,13 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="hero-image">
-            <div className="hero-avatar">
-              <img src="/img/tirath_profile_img.jpeg" alt="Tirath Bhathawala" />
-            </div>
+          <div className="hero-image" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <ProfileCard 
+              showUserInfo={false}
+              iconUrl="/iconpattern.png"
+              behindGlowEnabled={false}
+              innerGradient="linear-gradient(135deg, rgba(0, 45, 100, 0.9) 0%, rgba(20, 25, 40, 0.95) 50%, rgba(120, 0, 30, 0.9) 100%)"
+            />
           </div>
         </div>
       </section>
@@ -98,25 +103,25 @@ export default function Home() {
           </p>
           <div className="stats-container">
             <div className="stat-item">
-              <span className="stat-number">499</span>
+              <CountUp from={0} to={499} className="stat-number" duration={2} />
               <div className="stat-label">
                 GATE DS&amp;AI Rank (out of 60,000+)
               </div>
             </div>
             <div className="stat-item">
-              <span className="stat-number">9.29</span>
+              <CountUp from={0} to={9.29} className="stat-number" duration={2} />
               <div className="stat-label">
                 CGPA (B.Tech Comp Engg with Honors in Intelligent Computing)
               </div>
             </div>
             <div className="stat-item">
-              <span className="stat-number">6</span>
+              <CountUp from={0} to={6} className="stat-number" duration={2} />
               <div className="stat-label">
                 Research Papers &amp; Whitepapers
               </div>
             </div>
             <div className="stat-item">
-              <span className="stat-number">5</span>
+              <CountUp from={0} to={5} className="stat-number" duration={2} />
               <div className="stat-label">
                 Research &amp; Industry Internships
               </div>
