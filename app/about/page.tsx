@@ -67,7 +67,7 @@ export default function About() {
 
 
 
-          <h2 className="section-title" style={{ marginTop: "6rem", fontSize: "2.5rem" }}>Beyond Work</h2>
+          {/* <h2 className="section-title" style={{ marginTop: "6rem", fontSize: "2.5rem" }}>Beyond Work</h2>
           <div className="timeline" style={{ marginTop: "3rem" }}>
             <div className="timeline-item">
               <div className="timeline-content">
@@ -93,7 +93,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "4rem", marginTop: "6rem", alignItems: "center" }}>
             <ElectricBorder borderRadius={30} color="var(--highlight)" style={{ marginBottom: "4rem" }}>
