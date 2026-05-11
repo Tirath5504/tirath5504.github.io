@@ -1,7 +1,6 @@
 import Link from "next/link";
 import TypewriterEffect from "@/components/TypewriterEffect";
 import CountUp from "@/components/CountUp";
-import ProfileCard from "@/components/ProfileCard";
 
 export default function Home() {
   return (
@@ -11,7 +10,7 @@ export default function Home() {
           <div className="hero-text">
             <h1>Tirath Bhathawala</h1>
             <p className="subtitle">
-              I&apos;m a <TypewriterEffect />
+              I&apos;m <TypewriterEffect />
             </p>
             <p className="hero-description">
               Incoming MSCS at NYU Courant | Specializing in Multimodal AI &
@@ -83,13 +82,10 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="hero-image" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <ProfileCard 
-              showUserInfo={false}
-              iconUrl="/iconpattern.png"
-              behindGlowEnabled={false}
-              innerGradient="linear-gradient(135deg, rgba(0, 45, 100, 0.9) 0%, rgba(20, 25, 40, 0.95) 50%, rgba(120, 0, 30, 0.9) 100%)"
-            />
+          <div className="hero-image">
+            <div className="hero-avatar">
+              <img src="/img/tirath_profile_img.jpeg" alt="Tirath Bhathawala" />
+            </div>
           </div>
         </div>
       </section>
@@ -109,7 +105,12 @@ export default function Home() {
               </div>
             </div>
             <div className="stat-item">
-              <CountUp from={0} to={9.29} className="stat-number" duration={2} />
+              <CountUp
+                from={0}
+                to={9.29}
+                className="stat-number"
+                duration={2}
+              />
               <div className="stat-label">
                 CGPA (B.Tech Comp Engg with Honors in Intelligent Computing)
               </div>

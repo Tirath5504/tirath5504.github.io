@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 export default function TypewriterEffect() {
   const [text, setText] = useState("");
   const typingPhrases = [
-    "AI/MLE Intern Candidate",
-    "Incoming NYU MSCS",
-    "Agentic AI Developer",
-    "Barcelona Fan",
+    "an AI/MLE Intern Candidate",
+    "an Incoming NYU MSCS Student",
+    "an Agentic AI Developer",
+    "a Barcelona Fan",
   ];
 
   useEffect(() => {
