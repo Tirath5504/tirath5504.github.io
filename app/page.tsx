@@ -32,12 +32,12 @@ export default function Home() {
                 <i className="uil uil-envelope"></i> Get In Touch
               </Link>
               <a
-                href="https://shorturl.at/DByUL"
+                href="https://shorturl.at/DugCC"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
               >
-                <i className="uil uil-file-download"></i> Download CV
+                <i className="uil uil-file-download"></i> View Resume
               </a>
             </div>
             <div className="social-links">
